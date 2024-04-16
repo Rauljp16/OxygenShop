@@ -10,16 +10,70 @@ body {
 
 header {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  padding: 17px 25px 17px 25px;
+}
+header .sectionLogo {
+  display: inline-block;
+  width: 79%;
+}
+header .sectionMenu {
+  display: inline-block;
+  text-align: right;
+  width: 19%;
+  vertical-align: super;
 }
 header p {
-  display: inline-block;
   color: #08a6e4;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 37px;
-  margin: 17px 0 17px 25px;
 }
-header svg {
-  display: inline-block;
+
+main {
+  text-align: center;
+}
+main .OpeningSection {
+  width: 80%;
+  margin: 4rem auto;
+}
+main .OpeningSection h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 41.09px;
+}
+main .OpeningSection p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 23px;
+  margin: 1rem 0;
+}
+main .OpeningSection button {
+  width: 100%;
+  max-width: 310px;
+  height: 67px;
+  background-color: #08a6e4;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.2901960784);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 22px;
+}
+main .BackgroundMobile {
+  width: 100vw;
+  max-width: 500px;
+}
+main .popular {
+  background-color: bisque;
+}
+main .popular div .svgPerson {
+  position: relative;
+}
+main .popular div .svgElipse {
+  position: absolute;
 }/*# sourceMappingURL=styles.css.map */
