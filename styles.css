@@ -200,4 +200,67 @@ main .groups .groupTrumpet p {
   font-size: 14px;
   line-height: 19px;
   margin: 1.2rem 0;
+}
+main .pricing {
+  padding-bottom: 25px;
+  position: relative;
+}
+main .pricing h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42.26px;
+  margin: 3rem auto 0;
+}
+main .pricing .basic {
+  width: 80%;
+  margin: auto;
+}
+main .pricing .basic .info {
+  border: 1px solid #fb3b64;
+  border-radius: 18px;
+  width: 100%;
+  margin: 20px 0 0;
+}
+main .pricing .basic .info .leftInfo {
+  display: table-cell;
+  width: 48%;
+  vertical-align: middle;
+  padding-bottom: 5rem;
+}
+main .pricing .basic .info .leftInfo h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #13253b;
+}
+main .pricing .basic .info .leftInfo p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 64px;
+  color: #fb3b64;
+}
+main .pricing .basic .info .rightInfo {
+  display: table-cell;
+  width: 48%;
+  vertical-align: middle;
+  text-align: start;
+  padding-bottom: 20px;
+}
+main .pricing .basic .info .checkboxList p {
+  margin: 25px 0;
+}
+main .pricing .basic button {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 23px;
+  color: #ffffff;
+  background-color: #eb476e;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
 }/*# sourceMappingURL=styles.css.map */

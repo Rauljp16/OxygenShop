@@ -226,4 +226,70 @@ main {
       }
     }
   }
+  .pricing {
+    padding-bottom: 25px;
+    position: relative;
+    h1 {
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42.26px;
+      margin: 3rem auto 0;
+    }
+    .basic {
+      width: 80%;
+      margin: auto;
+      .info {
+        border: 1px solid #fb3b64;
+        border-radius: 18px;
+        width: 100%;
+        margin: 20px 0 0;
+        .leftInfo {
+          display: table-cell;
+          width: 48%;
+          vertical-align: middle;
+          padding-bottom: 5rem;
+          h1 {
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #13253b;
+          }
+          p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            font-size: 46px;
+            line-height: 64px;
+            color: #fb3b64;
+          }
+        }
+        .rightInfo {
+          display: table-cell;
+          width: 48%;
+          vertical-align: middle;
+          text-align: start;
+          padding-bottom: 20px;
+        }
+        .checkboxList {
+          p {
+            margin: 25px 0;
+          }
+        }
+      }
+
+      button {
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        border: none;
+        border-radius: 23px;
+        color: #ffffff;
+        background-color: #eb476e;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
 }
