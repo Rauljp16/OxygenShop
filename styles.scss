@@ -32,11 +32,14 @@ header {
     line-height: 37px;
   }
 }
+
 main {
   text-align: center;
+
   .OpeningSection {
     width: 80%;
-    margin: 4rem auto;
+    margin: 7rem auto 3rem;
+
     h1 {
       font-family: "Raleway", sans-serif;
       font-weight: 400;
@@ -49,7 +52,7 @@ main {
       font-weight: 400;
       font-size: 1rem;
       line-height: 23px;
-      margin: 1rem 0;
+      margin: 1.5rem 0 3rem;
     }
 
     button {
@@ -67,18 +70,159 @@ main {
       line-height: 22px;
     }
   }
+
   .BackgroundMobile {
     width: 100vw;
     max-width: 500px;
   }
+
+  .pMostPopular {
+    width: 80%;
+    margin: 1rem auto;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
   .popular {
-    background-color: bisque;
-    div {
-      .svgPerson {
+    width: max-content;
+    margin: 2rem auto;
+
+    .popularSvg {
+      position: relative;
+
+      .svgIconPerson {
+        position: absolute;
+        right: 15px;
+        top: 6px;
+      }
+
+      .svgIconEye {
+        position: absolute;
+        right: 13px;
+        top: 11px;
+      }
+
+      .svgIconCatalog {
+        position: absolute;
+        right: 16px;
+        top: 6px;
+      }
+
+      .svgElipse {
         position: relative;
       }
-      .svgElipse {
-        position: absolute;
+    }
+
+    .pNumber {
+      margin: 15px auto;
+      font-family: "Raleway", sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: 5.96px;
+      max-width: 136px;
+    }
+
+    .pDescription {
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 20px;
+      color: #a5a5a5;
+      max-width: 136px;
+    }
+  }
+
+  .groups {
+    background-color: #f7f7f7;
+    padding: 0.5rem 0;
+
+    .group {
+      border: 1px solid #e8e9ed;
+      border-radius: 5px;
+      width: 80%;
+      margin: 2rem auto;
+      text-align: start;
+      padding: 0 1rem;
+      background-color: #ffffff;
+
+      div {
+        position: relative;
+      }
+
+      .groupImg {
+        text-align: center;
+        margin: auto;
+        padding: 1rem 0 1.5rem;
+        width: max-content;
+
+        .rectangle {
+          position: absolute;
+          right: 15px;
+        }
+
+        .macbook2 {
+          position: relative;
+          top: 20px;
+          right: 20px;
+        }
+
+        .ellipse3 {
+          position: absolute;
+          right: 15px;
+        }
+
+        .iPhone2 {
+          position: relative;
+          top: 10px;
+          left: 25px;
+        }
+      }
+
+      h1 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35.22px;
+        margin: 1rem 0;
+      }
+
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        margin: 1.2rem 0;
+      }
+    }
+    .groupTrumpet {
+      border: 1px solid #e8e9ed;
+      border-radius: 5px;
+      width: 80%;
+      margin: 2rem auto;
+      text-align: start;
+      background-color: #ffffff;
+      .divTrumpet {
+        background-color: #55dfb4;
+      }
+      div {
+        padding: 0 1rem;
+      }
+      h1 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35.22px;
+        margin: 1rem 0;
+      }
+
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        margin: 1.2rem 0;
       }
     }
   }
