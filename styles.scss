@@ -200,16 +200,22 @@ main {
     .groupTrumpet {
       border: 1px solid #e8e9ed;
       border-radius: 5px;
-      width: 80%;
-      margin: 2rem auto;
-      text-align: start;
+      margin: 2rem;
       background-color: #ffffff;
+      .divTextTrumpet {
+        padding: 0 1rem;
+        text-align: start;
+      }
 
       .divTrumpet {
         background-color: #55dfb4;
+        overflow: hidden;
+        max-height: 195px;
+        border: 1px solid #e8e9ed;
+        border-radius: 5px;
       }
-      div {
-        padding: 0 1rem;
+      .imgTrumpet {
+        transform: translate(-9%, 9%);
       }
 
       h1 {
@@ -223,8 +229,8 @@ main {
       p {
         font-family: "Open Sans", sans-serif;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 16px;
+        line-height: 21.79px;
         margin: 1.2rem 0;
       }
     }
@@ -325,6 +331,18 @@ main {
       .premiumButton {
         background-color: #55dfb4;
       }
+    }
+  }
+
+  .questions {
+    margin: 2rem 0;
+    text-align: start;
+
+    .questionsTitle {
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 46.96px;
     }
   }
 }
