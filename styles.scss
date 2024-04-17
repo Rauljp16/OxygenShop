@@ -196,6 +196,7 @@ main {
         margin: 1.2rem 0;
       }
     }
+
     .groupTrumpet {
       border: 1px solid #e8e9ed;
       border-radius: 5px;
@@ -203,12 +204,14 @@ main {
       margin: 2rem auto;
       text-align: start;
       background-color: #ffffff;
+
       .divTrumpet {
         background-color: #55dfb4;
       }
       div {
         padding: 0 1rem;
       }
+
       h1 {
         font-family: "Raleway", sans-serif;
         font-weight: 400;
@@ -226,29 +229,35 @@ main {
       }
     }
   }
+
   .pricing {
     padding-bottom: 25px;
     position: relative;
-    h1 {
+
+    .pricingTitle {
       font-family: "Raleway", sans-serif;
       font-weight: 400;
       font-size: 36px;
       line-height: 42.26px;
       margin: 3rem auto 0;
     }
-    .basic {
+
+    .cardPricing {
       width: 80%;
       margin: auto;
+
       .info {
         border: 1px solid #fb3b64;
         border-radius: 18px;
         width: 100%;
         margin: 20px 0 0;
+
         .leftInfo {
           display: table-cell;
           width: 48%;
           vertical-align: middle;
           padding-bottom: 5rem;
+
           h1 {
             font-family: "Raleway", sans-serif;
             font-weight: 700;
@@ -256,14 +265,27 @@ main {
             line-height: 24px;
             color: #13253b;
           }
+
           p {
             font-family: "Open Sans", sans-serif;
             font-weight: 300;
             font-size: 46px;
             line-height: 64px;
+          }
+
+          .basicPrice {
             color: #fb3b64;
           }
+
+          .profesionalPrice {
+            color: #08a6e4;
+          }
+
+          .premiumPrice {
+            color: #55dfb4;
+          }
         }
+
         .rightInfo {
           display: table-cell;
           width: 48%;
@@ -271,6 +293,7 @@ main {
           text-align: start;
           padding-bottom: 20px;
         }
+
         .checkboxList {
           p {
             margin: 25px 0;
@@ -289,6 +312,18 @@ main {
         bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
+      }
+
+      .basicButton {
+        background-color: #eb476e;
+      }
+
+      .profesionalButton {
+        background-color: #08a6e4;
+      }
+
+      .premiumButton {
+        background-color: #55dfb4;
       }
     }
   }

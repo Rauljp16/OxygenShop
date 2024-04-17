@@ -205,54 +205,62 @@ main .pricing {
   padding-bottom: 25px;
   position: relative;
 }
-main .pricing h1 {
+main .pricing .pricingTitle {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 42.26px;
   margin: 3rem auto 0;
 }
-main .pricing .basic {
+main .pricing .cardPricing {
   width: 80%;
   margin: auto;
 }
-main .pricing .basic .info {
+main .pricing .cardPricing .info {
   border: 1px solid #fb3b64;
   border-radius: 18px;
   width: 100%;
   margin: 20px 0 0;
 }
-main .pricing .basic .info .leftInfo {
+main .pricing .cardPricing .info .leftInfo {
   display: table-cell;
   width: 48%;
   vertical-align: middle;
   padding-bottom: 5rem;
 }
-main .pricing .basic .info .leftInfo h1 {
+main .pricing .cardPricing .info .leftInfo h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #13253b;
 }
-main .pricing .basic .info .leftInfo p {
+main .pricing .cardPricing .info .leftInfo p {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 46px;
   line-height: 64px;
+}
+main .pricing .cardPricing .info .leftInfo .basicPrice {
   color: #fb3b64;
 }
-main .pricing .basic .info .rightInfo {
+main .pricing .cardPricing .info .leftInfo .profesionalPrice {
+  color: #08a6e4;
+}
+main .pricing .cardPricing .info .leftInfo .premiumPrice {
+  color: #55dfb4;
+}
+main .pricing .cardPricing .info .rightInfo {
   display: table-cell;
   width: 48%;
   vertical-align: middle;
   text-align: start;
   padding-bottom: 20px;
 }
-main .pricing .basic .info .checkboxList p {
+main .pricing .cardPricing .info .checkboxList p {
   margin: 25px 0;
 }
-main .pricing .basic button {
+main .pricing .cardPricing button {
   position: absolute;
   width: 150px;
   height: 50px;
@@ -263,4 +271,13 @@ main .pricing .basic button {
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
+}
+main .pricing .cardPricing .basicButton {
+  background-color: #eb476e;
+}
+main .pricing .cardPricing .profesionalButton {
+  background-color: #08a6e4;
+}
+main .pricing .cardPricing .premiumButton {
+  background-color: #55dfb4;
 }/*# sourceMappingURL=styles.css.map */
