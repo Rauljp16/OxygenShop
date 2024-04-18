@@ -18,22 +18,26 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
+
   <body>
-    <header>
-      <section class="sectionLogo">
-        <p>OXYGENShop</p>
+    <header class="header">
+      <section class="header__logo">
+        <p class="header__p">OXYGENShop</p>
       </section>
-      <section class="sectionMenu"><img src="./svg/Menu.svg" /></section>
+      <section class="header__menu ">
+        <img src="./svg/Menu.svg" />
+      </section>
     </header>
-    <main>
-      <article class="OpeningSection">
-        <h1>Sell More!</h1>
-        <p>Open shop on our platform and increase your sales</p>
-        <button>Open your shop</button>
-      </article>
-      <img src="./img/BackgroundMobile.png" class="BackgroundMobile" />
-      <p class="pMostPopular">The most popular sales platform in country</p>
-      <article class="popular">
+    <main class="main">
+    <article class="main__opening">
+      <h1 class="main__h1">Sell More!</h1>
+      <p class="main__p ">Open shop on our platform and increase your sales</p>
+      <button class="main__button">Open your shop</button>
+    </article>
+    <article class="main__background"></article>
+    <p class="main__textPopular">The most popular sales platform in country</p>
+    <section class="main__sectionPopular">
+      <article class="main__sectionPopular__article">
         <div class="popularSvg">
           <img src="./svg/elipsePink.svg" class="svgElipse" />
           <img src="./svg/person.svg" class="svgIconPerson" />
@@ -57,160 +61,198 @@
         <p class="pNumber">10000+</p>
         <p class="pDescription">added posts daily</p>
       </article>
-      <section class="groups">
-        <article class="group">
-          <div class="groupImg">
-            <img src="./img/Rectangle 5.png" class="rectangle" />
-            <img src="./img/Macbook2 2.png" class="macbook2" />
+    </section>
+    <section class="groups">
+      <article class="group">
+        <div class="groupImg">
+          <img src="./img/Rectangle 5.png" class="rectangle" />
+          <img src="./img/Macbook2 2.png" class="macbook2" />
+        </div>
+        <div>
+          <h1>Be always first</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam.
+          </p>
+        </div>
+      </article>
+      <article class="group">
+        <div class="groupImg">
+          <img src="./img/Ellipse 3.png" class="ellipse3" />
+          <img src="./img/iPhone2 2.png" class="iPhone2" />
+        </div>
+        <div>
+          <h1>Your shop is where you are!</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam.
+          </p>
+        </div>
+      </article>
+      <article class="groupTrumpet">
+        <div class="divTextTrumpet">
+          <h1>Increase recognition your brand!</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam.
+          </p>
+        </div>
+        <div class="divTrumpet">
+          <img src="./img/Trumpet 2.png" alt="Trumpet" class="imgTrumpet" />
+        </div>
+      </article>
+    </section>
+    <section class="pricing">
+      <h1 class="pricingTitle">Pricing</h1>
+      <article class="cardPricing">
+        <div class="info">
+          <div class="leftInfo">
+            <h1>Basic</h1>
+            <p class="basicPrice">$0</p>
           </div>
-          <div>
-            <h1>Be always first</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
+          <div class="rightInfo">
+            <ul class="checkboxList">
+              <p>
+                <input type="checkbox" />
+                100 MB HDD
+              </p>
+              <p>
+                <input type="checkbox" />
+                1 Subdomain
+              </p>
+              <p>
+                <input type="checkbox" />
+                2 E-mails
+              </p>
+              <p>
+                <input type="checkbox" />
+                Two years license
+              </p>
+              <p>
+                <input type="checkbox" />
+                Full support
+              </p>
+            </ul>
           </div>
+        </div>
+        <button class="basicButton">Begin</button>
+      </article>
+    </section>
+    <section class="pricing">
+      <article class="cardPricing cardPricing--blue">
+        <div class="info">
+          <div class="leftInfo">
+            <h1>Basic</h1>
+            <p class="profesionalPrice">$0</p>
+          </div>
+          <div class="rightInfo">
+            <ul class="checkboxList">
+              <p>
+                <input type="checkbox" />
+                100 MB HDD
+              </p>
+              <p>
+                <input type="checkbox" />
+                1 Subdomain
+              </p>
+              <p>
+                <input type="checkbox" />
+                2 E-mails
+              </p>
+              <p>
+                <input type="checkbox" />
+                Two years license
+              </p>
+              <p>
+                <input type="checkbox" />
+                Full support
+              </p>
+            </ul>
+          </div>
+        </div>
+        <button class="profesionalButton">Begin</button>
+      </article>
+    </section>
+    <section class="pricing">
+      <article class="cardPricing cardPricing--green">
+        <div class="info">
+          <div class="leftInfo">
+            <h1>Basic</h1>
+            <p class="premiumPrice">$0</p>
+          </div>
+          <div class="rightInfo">
+            <ul class="checkboxList">
+              <p>
+                <input type="checkbox" />
+                100 MB HDD
+              </p>
+              <p>
+                <input type="checkbox" />
+                1 Subdomain
+              </p>
+              <p>
+                <input type="checkbox" />
+                2 E-mails
+              </p>
+              <p>
+                <input type="checkbox" />
+                Two years license
+              </p>
+              <p>
+                <input type="checkbox" />
+                Full support
+              </p>
+            </ul>
+          </div>
+        </div>
+        <button class="premiumButton">Begin</button>
+      </article>
+    </section>
+    <section class="questions">
+      <h1 class="questionsTitle">Any questions?</h1>
+      <p class="questionsP">Leave your email address or call us!</p>
+      <article class="mail">
+        <img src="./svg/mail.svg" class="svgMail" />
+        <p class="pMail">info@bestshop.xyz</p>
+      </article>
+      <article class="phone">
+        <img src="./svg/Phone.svg" class="svgPhone" />
+        <p class="pPhone">123 456 789</p>
+      </article>
+      <article class="form">
+        <p class="formP">NAME</p>
+        <input type="text" class="inputForm" />
+        <p class="formP">EMAIL</p>
+        <input type="email" class="inputForm" />
+      </article>
+      <article class="check">
+        <input type="checkbox" class="checkboxCheck" />
+        <p class="pCheck">
+          I hereby give consent for my personal data included in my
+          application to be processed for the purposes of the recruitment
+          process under the European Parliament’s and Council of the European
+          Union Regulation on the Protection of Natural Persons as of 27 April
+          2016, with regard to the processing of personal data and on the free
+          movement of such data, and repealing Directive 95/46/EC (Data
+          Protection Directive)
+        </p>
+        <article class="sendForm">
+          <Button class="sendFormButton">Send</Button>
         </article>
-        <article class="group">
-          <div class="groupImg">
-            <img src="./img/Ellipse 3.png" class="ellipse3" />
-            <img src="./img/iPhone2 2.png" class="iPhone2" />
-          </div>
-          <div>
-            <h1>Your shop is where you are!</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-          </div>
-        </article>
-        <article class="groupTrumpet">
-          <div class="divTextTrumpet">
-            <h1>Increase recognition your brand!</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-          </div>
-          <div class="divTrumpet">
-            <img src="./img/Trumpet 2.png" alt="Trumpet" class="imgTrumpet" />
-          </div>
-        </article>
-      </section>
-      <section class="pricing">
-        <h1 class="pricingTitle">Pricing</h1>
-        <article class="cardPricing">
-          <div class="info">
-            <div class="leftInfo">
-              <h1>Basic</h1>
-              <p class="basicPrice">$0</p>
-            </div>
-            <div class="rightInfo">
-              <ul class="checkboxList">
-                <p>
-                  <input type="checkbox" />
-                  100 MB HDD
-                </p>
-                <p>
-                  <input type="checkbox" />
-                  1 Subdomain
-                </p>
-                <p>
-                  <input type="checkbox" />
-                  2 E-mails
-                </p>
-                <p>
-                  <input type="checkbox" />
-                  Two years license
-                </p>
-                <p>
-                  <input type="checkbox" />
-                  Full support
-                </p>
-              </ul>
-            </div>
-          </div>
-          <button class="basicButton">Begin</button>
-        </article>
-      </section>
-      <section class="pricing">
-        <article class="cardPricing cardPricing--blue">
-          <div class="info">
-            <div class="leftInfo">
-              <h1>Basic</h1>
-              <p class="profesionalPrice">$0</p>
-            </div>
-            <div class="rightInfo">
-              <ul class="checkboxList">
-                <p>
-                  <input type="checkbox" />
-                  100 MB HDD
-                </p>
-                <p>
-                  <input type="checkbox" />
-                  1 Subdomain
-                </p>
-                <p>
-                  <input type="checkbox" />
-                  2 E-mails
-                </p>
-                <p>
-                  <input type="checkbox" />
-                  Two years license
-                </p>
-                <p>
-                  <input type="checkbox" />
-                  Full support
-                </p>
-              </ul>
-            </div>
-          </div>
-          <button class="profesionalButton">Begin</button>
-        </article>
-      </section>
-      <section class="pricing">
-        <article class="cardPricing cardPricing--green">
-          <div class="info">
-            <div class="leftInfo">
-              <h1>Basic</h1>
-              <p class="premiumPrice">$0</p>
-            </div>
-            <div class="rightInfo">
-              <ul class="checkboxList">
-                <p>
-                  <input type="checkbox" />
-                  100 MB HDD
-                </p>
-                <p>
-                  <input type="checkbox" />
-                  1 Subdomain
-                </p>
-                <p>
-                  <input type="checkbox" />
-                  2 E-mails
-                </p>
-                <p>
-                  <input type="checkbox" />
-                  Two years license
-                </p>
-                <p>
-                  <input type="checkbox" />
-                  Full support
-                </p>
-              </ul>
-            </div>
-          </div>
-          <button class="premiumButton">Begin</button>
-        </article>
-      </section>
-      <!-- <section class="questions">
-        <h1 class="questionsTitle">Any questions?</h1>
-        <p>Leave your email address or call us!</p>
-      </section> -->
-    </main>
-    <footer></footer>
+    </section>
+  </main>
+  <footer>
+    <section class="rights">
+      <p class="pRightsLogo">OXYGENShop</p>
+      <p class="pRights">© 2022 OXYGEN, All Rights Reserved</p>
+    </section>
+    <section class="rrss">
+      <img src="./svg/Twitter (2) 2.svg" class="svgTwitter" />
+      <img src="./svg/Facebook (3) 2.svg" class="svgFacebook" />
+    </section>
+  </footer>
   </body>
 </html>

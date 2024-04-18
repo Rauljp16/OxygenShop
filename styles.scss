@@ -8,76 +8,79 @@ body {
   min-width: 320px;
 }
 
-header {
+.header {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   padding: 17px 25px 17px 25px;
 
-  .sectionLogo {
+  &__logo {
     display: inline-block;
     width: 79%;
   }
 
-  .sectionMenu {
-    display: inline-block;
-    text-align: right;
-    width: 19%;
-    vertical-align: super;
-  }
-
-  p {
+  &__p {
     color: #08a6e4;
     font-family: "Raleway", sans-serif;
     font-weight: 300;
     font-size: 2em;
     line-height: 37px;
   }
+
+  &__menu {
+    display: inline-block;
+    text-align: right;
+    width: 19%;
+    vertical-align: super;
+  }
 }
 
-main {
+.main {
   text-align: center;
 
-  .OpeningSection {
+  &__opening {
     width: 80%;
     margin: 7rem auto 3rem;
-
-    h1 {
-      font-family: "Raleway", sans-serif;
-      font-weight: 400;
-      font-size: 35px;
-      line-height: 41.09px;
-    }
-
-    p {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 23px;
-      margin: 1.5rem 0 3rem;
-    }
-
-    button {
-      width: 100%;
-      max-width: 310px;
-      height: 67px;
-      background-color: #08a6e4;
-      color: #ffffff;
-      border: none;
-      border-radius: 40px;
-      box-shadow: 5px 10px 14px #07ace64a;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 22px;
-    }
+  }
+  &__h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41.09px;
   }
 
-  .BackgroundMobile {
-    width: 100vw;
-    max-width: 500px;
+  &__p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 23px;
+    margin: 1.5rem 0 3rem;
   }
 
-  .pMostPopular {
+  &__button {
+    width: 100%;
+    max-width: 310px;
+    height: 67px;
+    background-color: #08a6e4;
+    color: #ffffff;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px #07ace64a;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 22px;
+  }
+
+  &__background {
+    height: 18rem;
+    background-image: url("./img/BackgroundMobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &__textPopular {
     width: 80%;
+    max-width: 500px;
     margin: 1rem auto;
     font-family: "Raleway", sans-serif;
     font-weight: 300;
@@ -85,7 +88,7 @@ main {
     line-height: 35px;
   }
 
-  .popular {
+  &__sectionPopular {
     width: max-content;
     margin: 2rem auto;
 
@@ -141,8 +144,8 @@ main {
     .group {
       border: 1px solid #e8e9ed;
       border-radius: 5px;
-      width: 80%;
       margin: 2rem auto;
+      max-width: 500px;
       text-align: start;
       padding: 0 1rem;
       background-color: #ffffff;
@@ -200,8 +203,10 @@ main {
     .groupTrumpet {
       border: 1px solid #e8e9ed;
       border-radius: 5px;
-      margin: 2rem;
+      margin: 2rem auto;
+      max-width: 500px;
       background-color: #ffffff;
+
       .divTextTrumpet {
         padding: 0 1rem;
         text-align: start;
@@ -214,6 +219,7 @@ main {
         border: 1px solid #e8e9ed;
         border-radius: 5px;
       }
+
       .imgTrumpet {
         transform: translate(-9%, 9%);
       }
@@ -251,6 +257,7 @@ main {
     .cardPricing {
       width: 80%;
       margin: auto;
+      max-width: 500px;
 
       .info {
         border: 1px solid #fb3b64;
@@ -335,14 +342,187 @@ main {
   }
 
   .questions {
-    margin: 2rem 0;
+    margin: 2rem auto 1rem;
     text-align: start;
+    max-width: 500px;
+    padding: 0 1.5rem;
 
     .questionsTitle {
       font-family: "Raleway", sans-serif;
       font-weight: 400;
       font-size: 40px;
       line-height: 46.96px;
+    }
+
+    .questionsP {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .mail {
+    margin: 1.5rem 0 0.5rem;
+
+    .svgMail {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.4rem;
+    }
+
+    .pMail {
+      display: inline-block;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #a5a5a5;
+    }
+  }
+
+  .phone {
+    .svgPhone {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.4rem;
+    }
+
+    .pPhone {
+      display: inline-block;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #a5a5a5;
+    }
+  }
+
+  .form {
+    .formP {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 14.98px;
+      letter-spacing: 3.28px;
+      color: #08a6e4;
+      margin: 2rem 0 1.8rem;
+    }
+
+    .inputForm {
+      border: none;
+      border-bottom: 1px solid #9a9595;
+      width: 100%;
+    }
+  }
+
+  .check {
+    margin: 2rem 0;
+
+    .checkboxCheck {
+      display: inline-block;
+      appearance: none;
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 1px solid #95989a;
+      border-radius: 4px;
+      background-image: url(./svg/Vector.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .pCheck {
+      display: inline-block;
+      width: 85%;
+      vertical-align: top;
+      margin: 0 0.5rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16.34px;
+      color: #707070;
+    }
+  }
+
+  .sendForm {
+    margin: 2rem 0 2.5rem;
+    text-align: end;
+
+    .sendFormButton {
+      border: none;
+      border-radius: 35px;
+      background-color: #08a6e4;
+      padding: 1.4rem 6rem;
+      color: #ffffff;
+      box-shadow: 5px 10px 14px #07ace64a;
+    }
+
+    .pCheck {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 17.7px;
+    }
+  }
+}
+
+footer {
+  box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1rem;
+
+  .rights {
+    display: inline-block;
+    vertical-align: sub;
+    width: 70%;
+
+    .pRightsLogo {
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 26px;
+      line-height: 30px;
+      color: #08a6e4;
+    }
+
+    .pRights {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 14.98px;
+      color: #a5a5a5;
+    }
+  }
+
+  .rrss {
+    display: inline-block;
+    width: 28%;
+    text-align: right;
+
+    .svgTwitter {
+      margin-right: 1rem;
+    }
+
+    .svgFacebook {
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    .background {
+      background-image: url("./img/BackgroundDesktop.png");
+      height: 30rem;
+    }
+
+    .pMostPopular {
+      max-width: 1000px;
+    }
+
+    .sectionPopular {
+      display: flex;
+      flex-direction: row;
+      max-width: 600px;
+      margin: 2rem auto;
     }
   }
 }
