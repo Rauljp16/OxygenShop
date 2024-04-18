@@ -85,28 +85,28 @@ body {
   width: max-content;
   margin: 2rem auto;
 }
-.main__sectionPopular .popularSvg {
+.main__popularSvg {
   position: relative;
 }
-.main__sectionPopular .popularSvg .svgIconPerson {
+.main__svgIconPerson {
   position: absolute;
   right: 15px;
   top: 6px;
 }
-.main__sectionPopular .popularSvg .svgIconEye {
+.main__svgIconEye {
   position: absolute;
   right: 13px;
   top: 11px;
 }
-.main__sectionPopular .popularSvg .svgIconCatalog {
+.main__svgIconCatalog {
   position: absolute;
   right: 16px;
   top: 6px;
 }
-.main__sectionPopular .popularSvg .svgElipse {
+.main__svgElipse {
   position: relative;
 }
-.main__sectionPopular .pNumber {
+.main__pNumber {
   margin: 15px auto;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -114,7 +114,7 @@ body {
   letter-spacing: 5.96px;
   max-width: 136px;
 }
-.main__sectionPopular .pDescription {
+.main__pDescription {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 17px;
@@ -122,95 +122,81 @@ body {
   color: #a5a5a5;
   max-width: 136px;
 }
-.main .groups {
+.main__groups {
   background-color: #f7f7f7;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
 }
-.main .groups .group {
+.main__group {
   border: 1px solid #e8e9ed;
   border-radius: 5px;
   margin: 2rem auto;
+  width: 80%;
   max-width: 500px;
   text-align: start;
   padding: 0 1rem;
   background-color: #ffffff;
 }
-.main .groups .group div {
-  position: relative;
-}
-.main .groups .group .groupImg {
+.main__groupImg {
   text-align: center;
   margin: auto;
   padding: 1rem 0 1.5rem;
   width: -moz-max-content;
   width: max-content;
+  position: relative;
 }
-.main .groups .group .groupImg .rectangle {
+.main__rectangle {
   position: absolute;
   right: 15px;
 }
-.main .groups .group .groupImg .macbook2 {
+.main__macbook2 {
   position: relative;
   top: 20px;
   right: 20px;
 }
-.main .groups .group .groupImg .ellipse3 {
+.main__ellipse3 {
   position: absolute;
   right: 15px;
 }
-.main .groups .group .groupImg .iPhone2 {
+.main__iPhone2 {
   position: relative;
   top: 10px;
   left: 25px;
 }
-.main .groups .group h1 {
+.main__h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 35.22px;
   margin: 1rem 0;
 }
-.main .groups .group p {
+.main__p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   margin: 1.2rem 0;
 }
-.main .groups .groupTrumpet {
+.main__groupTrumpet {
   border: 1px solid #e8e9ed;
   border-radius: 5px;
   margin: 2rem auto;
   max-width: 500px;
   background-color: #ffffff;
+  width: 80%;
 }
-.main .groups .groupTrumpet .divTextTrumpet {
+.main__divTextTrumpet {
   padding: 0 1rem;
   text-align: start;
 }
-.main .groups .groupTrumpet .divTrumpet {
+.main__divTrumpet {
   background-color: #55dfb4;
   overflow: hidden;
   max-height: 195px;
   border: 1px solid #e8e9ed;
   border-radius: 5px;
 }
-.main .groups .groupTrumpet .imgTrumpet {
+.main__imgTrumpet {
   transform: translate(-9%, 9%);
-}
-.main .groups .groupTrumpet h1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 35.22px;
-  margin: 1rem 0;
-}
-.main .groups .groupTrumpet p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21.79px;
-  margin: 1.2rem 0;
 }
 .main .pricing {
   padding-bottom: 25px;
