@@ -198,67 +198,62 @@ body {
 .main__imgTrumpet {
   transform: translate(-9%, 9%);
 }
-.main .pricing {
-  padding-bottom: 25px;
-  position: relative;
-}
-.main .pricing .pricingTitle {
+.main .pricingTitle {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 42.26px;
   margin: 3rem auto 0;
 }
-.main .pricing .cardPricing {
+.main .pricing {
+  padding-bottom: 25px;
+  position: relative;
+}
+.main .pricing__card {
   width: 80%;
   margin: auto;
   max-width: 500px;
 }
-.main .pricing .cardPricing .info {
+.main .pricing__info {
   border: 1px solid #fb3b64;
   border-radius: 18px;
   width: 100%;
   margin: 20px 0 0;
 }
-.main .pricing .cardPricing .info .leftInfo {
+.main .pricing__leftInfo {
   display: table-cell;
   width: 48%;
   vertical-align: middle;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
 }
-.main .pricing .cardPricing .info .leftInfo h1 {
+.main .pricing .h1Modality {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #13253b;
 }
-.main .pricing .cardPricing .info .leftInfo p {
+.main .pricing .pModality {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 46px;
   line-height: 64px;
-}
-.main .pricing .cardPricing .info .leftInfo .basicPrice {
   color: #fb3b64;
 }
-.main .pricing .cardPricing .info .leftInfo .profesionalPrice {
+.main .pricing .pModality--blue {
   color: #08a6e4;
 }
-.main .pricing .cardPricing .info .leftInfo .premiumPrice {
-  color: #55dfb4;
-}
-.main .pricing .cardPricing .info .rightInfo {
+.main .pricing__rightInfo {
   display: table-cell;
   width: 48%;
   vertical-align: middle;
   text-align: start;
   padding-bottom: 20px;
 }
-.main .pricing .cardPricing .info .checkboxList p {
+.main .pricing__checkboxList p {
   margin: 25px 0;
 }
-.main .pricing .cardPricing button {
+.main .pricing__basicButton {
   position: absolute;
   width: 150px;
   height: 50px;
@@ -270,14 +265,23 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.main .pricing .cardPricing .basicButton {
+.main .basicButton {
   background-color: #eb476e;
 }
-.main .pricing .cardPricing .profesionalButton {
+.main .profesionalButton {
   background-color: #08a6e4;
 }
-.main .pricing .cardPricing .premiumButton {
+.main .premiumButton {
   background-color: #55dfb4;
+}
+.main .basicPrice {
+  color: #fb3b64;
+}
+.main .profesionalPrice {
+  color: #08a6e4;
+}
+.main .premiumPrice {
+  color: #55dfb4;
 }
 .main .questions {
   margin: 2rem auto 1rem;

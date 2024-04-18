@@ -220,103 +220,100 @@ body {
     transform: translate(-9%, 9%);
   }
 
+  .pricingTitle {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42.26px;
+    margin: 3rem auto 0;
+  }
   .pricing {
     padding-bottom: 25px;
     position: relative;
 
-    .pricingTitle {
-      font-family: "Raleway", sans-serif;
-      font-weight: 400;
-      font-size: 36px;
-      line-height: 42.26px;
-      margin: 3rem auto 0;
-    }
-
-    .cardPricing {
+    &__card {
       width: 80%;
       margin: auto;
       max-width: 500px;
+    }
+    &__info {
+      border: 1px solid #fb3b64;
+      border-radius: 18px;
+      width: 100%;
+      margin: 20px 0 0;
+    }
+    &__leftInfo {
+      display: table-cell;
+      width: 48%;
+      vertical-align: middle;
+      padding-bottom: 1rem;
+    }
+    .h1Modality {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #13253b;
+    }
 
-      .info {
-        border: 1px solid #fb3b64;
-        border-radius: 18px;
-        width: 100%;
-        margin: 20px 0 0;
+    .pModality {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 46px;
+      line-height: 64px;
+      color: #fb3b64;
+    }
+    .pModality--blue {
+      color: #08a6e4;
+    }
 
-        .leftInfo {
-          display: table-cell;
-          width: 48%;
-          vertical-align: middle;
-          padding-bottom: 5rem;
+    &__rightInfo {
+      display: table-cell;
+      width: 48%;
+      vertical-align: middle;
+      text-align: start;
+      padding-bottom: 20px;
+    }
 
-          h1 {
-            font-family: "Raleway", sans-serif;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 24px;
-            color: #13253b;
-          }
-
-          p {
-            font-family: "Open Sans", sans-serif;
-            font-weight: 300;
-            font-size: 46px;
-            line-height: 64px;
-          }
-
-          .basicPrice {
-            color: #fb3b64;
-          }
-
-          .profesionalPrice {
-            color: #08a6e4;
-          }
-
-          .premiumPrice {
-            color: #55dfb4;
-          }
-        }
-
-        .rightInfo {
-          display: table-cell;
-          width: 48%;
-          vertical-align: middle;
-          text-align: start;
-          padding-bottom: 20px;
-        }
-
-        .checkboxList {
-          p {
-            margin: 25px 0;
-          }
-        }
-      }
-
-      button {
-        position: absolute;
-        width: 150px;
-        height: 50px;
-        border: none;
-        border-radius: 23px;
-        color: #ffffff;
-        background-color: #eb476e;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-
-      .basicButton {
-        background-color: #eb476e;
-      }
-
-      .profesionalButton {
-        background-color: #08a6e4;
-      }
-
-      .premiumButton {
-        background-color: #55dfb4;
+    &__checkboxList {
+      p {
+        margin: 25px 0;
       }
     }
+
+    &__basicButton {
+      position: absolute;
+      width: 150px;
+      height: 50px;
+      border: none;
+      border-radius: 23px;
+      color: #ffffff;
+      background-color: #eb476e;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .basicButton {
+    background-color: #eb476e;
+  }
+
+  .profesionalButton {
+    background-color: #08a6e4;
+  }
+
+  .premiumButton {
+    background-color: #55dfb4;
+  }
+  .basicPrice {
+    color: #fb3b64;
+  }
+
+  .profesionalPrice {
+    color: #08a6e4;
+  }
+  .premiumPrice {
+    color: #55dfb4;
   }
 
   .questions {
