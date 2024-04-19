@@ -1,13 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  min-width: 320px;
-}
-
 .header {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   padding: 17px 25px 17px 25px;
@@ -16,7 +6,7 @@ body {
   display: inline-block;
   width: 79%;
 }
-.header__p {
+.header__logo__text {
   color: #08a6e4;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
@@ -37,20 +27,20 @@ body {
   width: 80%;
   margin: 7rem auto 3rem;
 }
-.main__h1 {
+.main__opening__title {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 35px;
   line-height: 41.09px;
 }
-.main__p {
+.main__opening__subtitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 23px;
   margin: 1.5rem 0 3rem;
 }
-.main__button {
+.main__opening__open {
   width: 100%;
   max-width: 310px;
   height: 67px;
@@ -85,28 +75,28 @@ body {
   width: max-content;
   margin: 2rem auto;
 }
-.main__popularSvg {
+.main__sectionPopular__article__popularSvg {
   position: relative;
 }
-.main__svgIconPerson {
+.main__sectionPopular__article__popularSvg__svgElipse {
+  position: relative;
+}
+.main__sectionPopular__article__popularSvg__svgIconPerson {
   position: absolute;
   right: 15px;
   top: 6px;
 }
-.main__svgIconEye {
+.main__sectionPopular__article__popularSvg__svgIconEye {
   position: absolute;
   right: 13px;
   top: 11px;
 }
-.main__svgIconCatalog {
+.main__sectionPopular__article__popularSvg__svgIconCatalog {
   position: absolute;
   right: 16px;
   top: 6px;
 }
-.main__svgElipse {
-  position: relative;
-}
-.main__pNumber {
+.main__sectionPopular__article__pNumber {
   margin: 15px auto;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -114,7 +104,7 @@ body {
   letter-spacing: 5.96px;
   max-width: 136px;
 }
-.main__pDescription {
+.main__sectionPopular__article__pDescription {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 17px;
@@ -126,7 +116,7 @@ body {
   background-color: #f7f7f7;
   padding: 0.5rem;
 }
-.main__group {
+.main__groups__group {
   border: 1px solid #e8e9ed;
   border-radius: 5px;
   margin: 2rem auto;
@@ -136,7 +126,7 @@ body {
   padding: 0 1rem;
   background-color: #ffffff;
 }
-.main__groupImg {
+.main__groups__group__groupImg {
   text-align: center;
   margin: auto;
   padding: 1rem 0 1.5rem;
@@ -144,39 +134,39 @@ body {
   width: max-content;
   position: relative;
 }
-.main__rectangle {
+.main__groups__group__groupImg__rectangle {
   position: absolute;
   right: 15px;
 }
-.main__macbook2 {
+.main__groups__group__groupImg__macbook2 {
   position: relative;
   top: 20px;
   right: 20px;
 }
-.main__ellipse3 {
+.main__groups__group__groupImg__ellipse3 {
   position: absolute;
   right: 15px;
 }
-.main__iPhone2 {
+.main__groups__group__groupImg__iPhone2 {
   position: relative;
   top: 10px;
   left: 25px;
 }
-.main__h1 {
+.main__groups__group__groupText__title {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 35.22px;
   margin: 1rem 0;
 }
-.main__p {
+.main__groups__group__groupText__description {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   margin: 1.2rem 0;
 }
-.main__groupTrumpet {
+.main__groups__groupTrumpet {
   border: 1px solid #e8e9ed;
   border-radius: 5px;
   margin: 2rem auto;
@@ -184,76 +174,87 @@ body {
   background-color: #ffffff;
   width: 80%;
 }
-.main__divTextTrumpet {
+.main__groups__groupTrumpet__divTextTrumpet {
   padding: 0 1rem;
   text-align: start;
 }
-.main__divTrumpet {
+.main__groups__groupTrumpet__divTextTrumpet__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35.22px;
+  margin: 1rem 0;
+}
+.main__groups__groupTrumpet__divTextTrumpet__description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 1.2rem 0;
+}
+.main__groups__groupTrumpet__divImgTrumpet {
   background-color: #55dfb4;
   overflow: hidden;
   max-height: 195px;
   border: 1px solid #e8e9ed;
   border-radius: 5px;
 }
-.main__imgTrumpet {
+.main__groups__groupTrumpet__divImgTrumpet__imgTrumpet {
   transform: translate(-9%, 9%);
 }
-.main .pricingTitle {
+.main__pricingTitle {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 42.26px;
   margin: 3rem auto 0;
 }
-.main .pricing {
+.main__pricing {
   padding-bottom: 25px;
   position: relative;
 }
-.main .pricing__card {
+.main__pricing__card {
   width: 80%;
   margin: auto;
   max-width: 500px;
 }
-.main .pricing__info {
+.main__pricing__card__info {
   border: 1px solid #fb3b64;
   border-radius: 18px;
   width: 100%;
   margin: 20px 0 0;
 }
-.main .pricing__leftInfo {
+.main__pricing__card__info__leftInfo {
   display: table-cell;
   width: 48%;
   vertical-align: middle;
   padding-bottom: 1rem;
 }
-.main .pricing .h1Modality {
+.main__pricing__card__info__leftInfo__h1Modality {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #13253b;
 }
-.main .pricing .pModality {
+.main__pricing__card__info__leftInfo__pModality {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 46px;
   line-height: 64px;
   color: #fb3b64;
 }
-.main .pricing .pModality--blue {
-  color: #08a6e4;
-}
-.main .pricing__rightInfo {
+.main__pricing__card__info__rightInfo {
   display: table-cell;
   width: 48%;
   vertical-align: middle;
   text-align: start;
   padding-bottom: 20px;
 }
-.main .pricing__checkboxList p {
+.main__pricing__card__info__rightInfo__checkboxList p {
   margin: 25px 0;
 }
-.main .pricing__basicButton {
+.main__pricing__card__basicButton {
   position: absolute;
   width: 150px;
   height: 50px;
@@ -264,6 +265,24 @@ body {
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
+}
+.main__pricing .info--blue {
+  border: 1px solid #08a6e4;
+}
+.main__pricing .info--blue .pModality {
+  color: #08a6e4;
+}
+.main__pricing .basicButton--blue {
+  background-color: #08a6e4;
+}
+.main__pricing .info--green {
+  border: 1px solid #55dfb4;
+}
+.main__pricing .info--green .pModality {
+  color: #55dfb4;
+}
+.main__pricing .basicButton--green {
+  background-color: #55dfb4;
 }
 .main .basicButton {
   background-color: #eb476e;
@@ -425,18 +444,22 @@ footer .rrss .svgFacebook {
   margin-right: 1rem;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
 @media only screen and (min-width: 1000px) {
-  main .background {
+  .main__background {
+    height: 18rem;
     background-image: url("./img/BackgroundDesktop.png");
-    height: 30rem;
-  }
-  main .pMostPopular {
-    max-width: 1000px;
-  }
-  main .sectionPopular {
-    display: flex;
-    flex-direction: row;
-    max-width: 600px;
-    margin: 2rem auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,40 @@
+footer {
+  box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1rem;
+
+  .rights {
+    display: inline-block;
+    vertical-align: sub;
+    width: 70%;
+
+    .pRightsLogo {
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 26px;
+      line-height: 30px;
+      color: #08a6e4;
+    }
+
+    .pRights {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 14.98px;
+      color: #a5a5a5;
+    }
+  }
+
+  .rrss {
+    display: inline-block;
+    width: 28%;
+    text-align: right;
+
+    .svgTwitter {
+      margin-right: 1rem;
+    }
+
+    .svgFacebook {
+      margin-right: 1rem;
+    }
+  }
+}

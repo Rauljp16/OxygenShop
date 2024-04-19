@@ -1,0 +1,24 @@
+.header {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  padding: 17px 25px 17px 25px;
+
+  &__logo {
+    display: inline-block;
+    width: 79%;
+
+    &__text {
+      color: #08a6e4;
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 2em;
+      line-height: 37px;
+    }
+  }
+
+  &__menu {
+    display: inline-block;
+    text-align: right;
+    width: 19%;
+    vertical-align: super;
+  }
+}
