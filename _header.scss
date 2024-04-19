@@ -21,9 +21,12 @@
     text-align: right;
     width: 45%;
     vertical-align: super;
-  }
-  &__menuDesktop {
-    display: none;
+    &__svg {
+      display: inline;
+    }
+    &__menuDesktop {
+      display: none;
+    }
   }
 }
 
@@ -32,7 +35,18 @@
     padding-left: 4.5em;
     &__menu {
       width: 45%;
-      // display: none;
+      height: 44px;
+      &__svg {
+        display: none;
+      }
+
+      &__menuDesktop {
+        display: flex;
+        justify-content: space-between;
+        &__article {
+          border: 1px solid red;
+        }
+      }
     }
   }
 }

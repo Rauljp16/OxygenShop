@@ -20,7 +20,10 @@
   width: 45%;
   vertical-align: super;
 }
-.header__menuDesktop {
+.header__menu__svg {
+  display: inline;
+}
+.header__menu__menuDesktop {
   display: none;
 }
 
@@ -30,6 +33,17 @@
   }
   .header__menu {
     width: 45%;
+    height: 44px;
+  }
+  .header__menu__svg {
+    display: none;
+  }
+  .header__menu__menuDesktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__menu__menuDesktop__article {
+    border: 1px solid red;
   }
 }
 .main {
