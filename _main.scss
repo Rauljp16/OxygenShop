@@ -255,6 +255,14 @@
             line-height: 64px;
             color: #fb3b64;
           }
+
+          .pModality--blue {
+            color: #08a6e4;
+          }
+
+          .pModality--green {
+            color: #55dfb4;
+          }
         }
 
         &__rightInfo {
@@ -271,6 +279,15 @@
           }
         }
       }
+
+      .info--borderblue {
+        border: 1px solid #08a6e4;
+      }
+
+      .info--borderGreen {
+        border: 1px solid #55dfb4;
+      }
+
       &__basicButton {
         position: absolute;
         width: 150px;
@@ -283,178 +300,137 @@
         left: 50%;
         transform: translateX(-50%);
       }
-    }
 
-    .info--blue {
-      .pModality {
-        color: #08a6e4;
+      .basicButton--blue {
+        background-color: #08a6e4;
       }
 
-      border: 1px solid #08a6e4;
-    }
-
-    .basicButton--blue {
-      background-color: #08a6e4;
-    }
-
-    .info--green {
-      .pModality {
-        color: #55dfb4;
+      .basicButton--green {
+        background-color: #55dfb4;
       }
-
-      border: 1px solid #55dfb4;
-    }
-
-    .basicButton--green {
-      background-color: #55dfb4;
     }
   }
 
-  .basicButton {
-    background-color: #eb476e;
-  }
-
-  .profesionalButton {
-    background-color: #08a6e4;
-  }
-
-  .premiumButton {
-    background-color: #55dfb4;
-  }
-
-  .basicPrice {
-    color: #fb3b64;
-  }
-
-  .profesionalPrice {
-    color: #08a6e4;
-  }
-
-  .premiumPrice {
-    color: #55dfb4;
-  }
-
-  .questions {
+  &__questions {
     margin: 2rem auto 1rem;
     text-align: start;
     max-width: 500px;
     padding: 0 1.5rem;
 
-    .questionsTitle {
+    &__questions__questionsTitle {
       font-family: "Raleway", sans-serif;
       font-weight: 400;
       font-size: 40px;
       line-height: 46.96px;
     }
 
-    .questionsP {
+    &__questions__subtitle {
       font-family: "Open Sans", sans-serif;
       font-weight: 400;
       font-size: 16px;
       line-height: 22px;
     }
+
+    &__mail {
+      margin: 1.5rem 0 0.5rem;
+
+      &__svgMail {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.4rem;
+      }
+
+      &__textMail {
+        display: inline-block;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #a5a5a5;
+      }
+    }
+
+    &__phone {
+      &__svgPhone {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.4rem;
+      }
+
+      &__numberPhone {
+        display: inline-block;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #a5a5a5;
+      }
+    }
+
+    &__form {
+      &__formP {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 14.98px;
+        letter-spacing: 3.28px;
+        color: #08a6e4;
+        margin: 2rem 0 1.8rem;
+      }
+
+      &__inputForm {
+        border: none;
+        border-bottom: 1px solid #9a9595;
+        width: 100%;
+      }
+    }
+
+    &__check {
+      margin: 2rem 0;
+
+      &__checkboxCheck {
+        display: inline-block;
+        appearance: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 1px solid #95989a;
+        border-radius: 4px;
+        background-image: url(./svg/Vector.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &__pCheck {
+        display: inline-block;
+        width: 85%;
+        vertical-align: top;
+        margin: 0 0.5rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16.34px;
+        color: #707070;
+      }
+
+      &__sendForm {
+        margin: 2rem 0 2.5rem;
+        text-align: end;
+
+        &__sendFormButton {
+          border: none;
+          border-radius: 35px;
+          background-color: #08a6e4;
+          padding: 1.4rem 6.3rem;
+          color: #ffffff;
+          box-shadow: 5px 10px 14px #07ace64a;
+        }
+      }
+    }
   }
+}
 
-  .mail {
-    margin: 1.5rem 0 0.5rem;
-
-    .svgMail {
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 0.4rem;
-    }
-
-    .pMail {
-      display: inline-block;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 22px;
-      color: #a5a5a5;
-    }
-  }
-
-  .phone {
-    .svgPhone {
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 0.4rem;
-    }
-
-    .pPhone {
-      display: inline-block;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 22px;
-      color: #a5a5a5;
-    }
-  }
-
-  .form {
-    .formP {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 600;
-      font-size: 11px;
-      line-height: 14.98px;
-      letter-spacing: 3.28px;
-      color: #08a6e4;
-      margin: 2rem 0 1.8rem;
-    }
-
-    .inputForm {
-      border: none;
-      border-bottom: 1px solid #9a9595;
-      width: 100%;
-    }
-  }
-
-  .check {
-    margin: 2rem 0;
-
-    .checkboxCheck {
-      display: inline-block;
-      appearance: none;
-      width: 1.5rem;
-      height: 1.5rem;
-      border: 1px solid #95989a;
-      border-radius: 4px;
-      background-image: url(./svg/Vector.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .pCheck {
-      display: inline-block;
-      width: 85%;
-      vertical-align: top;
-      margin: 0 0.5rem;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 16.34px;
-      color: #707070;
-    }
-  }
-
-  .sendForm {
-    margin: 2rem 0 2.5rem;
-    text-align: end;
-
-    .sendFormButton {
-      border: none;
-      border-radius: 35px;
-      background-color: #08a6e4;
-      padding: 1.4rem 6rem;
-      color: #ffffff;
-      box-shadow: 5px 10px 14px #07ace64a;
-    }
-
-    .pCheck {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 700;
-      font-size: 13px;
-      line-height: 17.7px;
-    }
+@media only screen and (min-width: 1000px) {
+  .main {
+    background-color: rgb(39, 194, 60);
   }
 }

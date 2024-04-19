@@ -11,15 +11,3 @@
 body {
   min-width: 320px;
 }
-
-@media only screen and (min-width: 1000px) {
-  .main {
-    &__background {
-      height: 18rem;
-      background-image: url("./img/BackgroundDesktop.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    }
-  }
-}

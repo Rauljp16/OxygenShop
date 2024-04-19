@@ -1,10 +1,11 @@
 .header {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
-  padding: 17px 25px 17px 25px;
+  padding: 17px 5px;
 
   &__logo {
     display: inline-block;
-    width: 79%;
+    width: 45%;
+    margin-left: 1em;
 
     &__text {
       color: #08a6e4;
@@ -18,7 +19,20 @@
   &__menu {
     display: inline-block;
     text-align: right;
-    width: 19%;
+    width: 45%;
     vertical-align: super;
+  }
+  &__menuDesktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    padding-left: 4.5em;
+    &__menu {
+      width: 45%;
+      // display: none;
+    }
   }
 }

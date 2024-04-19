@@ -1,10 +1,11 @@
 .header {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
-  padding: 17px 25px 17px 25px;
+  padding: 17px 5px;
 }
 .header__logo {
   display: inline-block;
-  width: 79%;
+  width: 45%;
+  margin-left: 1em;
 }
 .header__logo__text {
   color: #08a6e4;
@@ -16,10 +17,21 @@
 .header__menu {
   display: inline-block;
   text-align: right;
-  width: 19%;
+  width: 45%;
   vertical-align: super;
 }
+.header__menuDesktop {
+  display: none;
+}
 
+@media only screen and (min-width: 1000px) {
+  .header {
+    padding-left: 4.5em;
+  }
+  .header__menu {
+    width: 45%;
+  }
+}
 .main {
   text-align: center;
 }
@@ -244,6 +256,12 @@
   line-height: 64px;
   color: #fb3b64;
 }
+.main__pricing__card__info__leftInfo .pModality--blue {
+  color: #08a6e4;
+}
+.main__pricing__card__info__leftInfo .pModality--green {
+  color: #55dfb4;
+}
 .main__pricing__card__info__rightInfo {
   display: table-cell;
   width: 48%;
@@ -253,6 +271,12 @@
 }
 .main__pricing__card__info__rightInfo__checkboxList p {
   margin: 25px 0;
+}
+.main__pricing__card .info--borderblue {
+  border: 1px solid #08a6e4;
+}
+.main__pricing__card .info--borderGreen {
+  border: 1px solid #55dfb4;
 }
 .main__pricing__card__basicButton {
   position: absolute;
@@ -266,69 +290,39 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.main__pricing .info--blue {
-  border: 1px solid #08a6e4;
-}
-.main__pricing .info--blue .pModality {
-  color: #08a6e4;
-}
-.main__pricing .basicButton--blue {
+.main__pricing__card .basicButton--blue {
   background-color: #08a6e4;
 }
-.main__pricing .info--green {
-  border: 1px solid #55dfb4;
-}
-.main__pricing .info--green .pModality {
-  color: #55dfb4;
-}
-.main__pricing .basicButton--green {
+.main__pricing__card .basicButton--green {
   background-color: #55dfb4;
 }
-.main .basicButton {
-  background-color: #eb476e;
-}
-.main .profesionalButton {
-  background-color: #08a6e4;
-}
-.main .premiumButton {
-  background-color: #55dfb4;
-}
-.main .basicPrice {
-  color: #fb3b64;
-}
-.main .profesionalPrice {
-  color: #08a6e4;
-}
-.main .premiumPrice {
-  color: #55dfb4;
-}
-.main .questions {
+.main__questions {
   margin: 2rem auto 1rem;
   text-align: start;
   max-width: 500px;
   padding: 0 1.5rem;
 }
-.main .questions .questionsTitle {
+.main__questions__questions__questionsTitle {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 46.96px;
 }
-.main .questions .questionsP {
+.main__questions__questions__subtitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
-.main .mail {
+.main__questions__mail {
   margin: 1.5rem 0 0.5rem;
 }
-.main .mail .svgMail {
+.main__questions__mail__svgMail {
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.4rem;
 }
-.main .mail .pMail {
+.main__questions__mail__textMail {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -336,12 +330,12 @@
   line-height: 22px;
   color: #a5a5a5;
 }
-.main .phone .svgPhone {
+.main__questions__phone__svgPhone {
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.4rem;
 }
-.main .phone .pPhone {
+.main__questions__phone__numberPhone {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -349,7 +343,7 @@
   line-height: 22px;
   color: #a5a5a5;
 }
-.main .form .formP {
+.main__questions__form__formP {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 11px;
@@ -358,15 +352,15 @@
   color: #08a6e4;
   margin: 2rem 0 1.8rem;
 }
-.main .form .inputForm {
+.main__questions__form__inputForm {
   border: none;
   border-bottom: 1px solid #9a9595;
   width: 100%;
 }
-.main .check {
+.main__questions__check {
   margin: 2rem 0;
 }
-.main .check .checkboxCheck {
+.main__questions__check__checkboxCheck {
   display: inline-block;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -379,7 +373,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.main .check .pCheck {
+.main__questions__check__pCheck {
   display: inline-block;
   width: 85%;
   vertical-align: top;
@@ -390,60 +384,64 @@
   line-height: 16.34px;
   color: #707070;
 }
-.main .sendForm {
+.main__questions__check__sendForm {
   margin: 2rem 0 2.5rem;
   text-align: end;
 }
-.main .sendForm .sendFormButton {
+.main__questions__check__sendForm__sendFormButton {
   border: none;
   border-radius: 35px;
   background-color: #08a6e4;
-  padding: 1.4rem 6rem;
+  padding: 1.4rem 6.3rem;
   color: #ffffff;
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.2901960784);
 }
-.main .sendForm .pCheck {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 17.7px;
-}
 
-footer {
+@media only screen and (min-width: 1000px) {
+  .main {
+    background-color: rgb(39, 194, 60);
+  }
+}
+.footer {
   box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
   padding: 1.5rem 1rem;
 }
-footer .rights {
+.footer__rights {
   display: inline-block;
   vertical-align: sub;
   width: 70%;
 }
-footer .rights .pRightsLogo {
+.footer__rights__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 26px;
   line-height: 30px;
   color: #08a6e4;
 }
-footer .rights .pRights {
+.footer__rights__reserved {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 14.98px;
   color: #a5a5a5;
 }
-footer .rrss {
+.footer__rrss {
   display: inline-block;
   width: 28%;
   text-align: right;
 }
-footer .rrss .svgTwitter {
+.footer__rrss__svgTwitter {
   margin-right: 1rem;
 }
-footer .rrss .svgFacebook {
+.footer__rrss__svgFacebook {
   margin-right: 1rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .footer {
+    background-color: rgb(207, 46, 159);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -452,14 +450,4 @@ footer .rrss .svgFacebook {
 
 body {
   min-width: 320px;
-}
-
-@media only screen and (min-width: 1000px) {
-  .main__background {
-    height: 18rem;
-    background-image: url("./img/BackgroundDesktop.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
 }/*# sourceMappingURL=styles.css.map */
