@@ -1,10 +1,11 @@
 .header {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
-  padding: 17px 5px;
-
+  padding: 1em 5px;
+  height: 4em;
   &__logo {
     display: inline-block;
     width: 45%;
+    height: 100%;
     margin-left: 1em;
 
     &__text {
@@ -20,7 +21,8 @@
     display: inline-block;
     text-align: right;
     width: 45%;
-    vertical-align: super;
+    height: 100%;
+    // vertical-align: super;
     &__svg {
       display: inline;
     }
@@ -32,19 +34,36 @@
 
 @media only screen and (min-width: 1000px) {
   .header {
-    padding-left: 4.5em;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    &__logo {
+      display: flex;
+      align-items: center;
+      padding-left: 2em;
+    }
     &__menu {
-      width: 45%;
-      height: 44px;
       &__svg {
         display: none;
       }
 
       &__menuDesktop {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        height: 100%;
         &__article {
-          border: 1px solid red;
+          display: flex;
+          align-items: center;
+          height: 100%;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          font-size: 11px;
+          line-height: 15px;
+          letter-spacing: 3.28px;
+        }
+        .article--border {
+          border-bottom: 4px solid #08a6e4;
+          font-weight: 700;
         }
       }
     }
