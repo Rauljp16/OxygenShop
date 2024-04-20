@@ -3,7 +3,7 @@
 
   &__opening {
     width: 80%;
-    margin: 7rem auto 3rem;
+    margin: 7rem auto 0;
 
     &__title {
       font-family: "Raleway", sans-serif;
@@ -20,9 +20,9 @@
       margin: 1.5rem 0 3rem;
     }
 
-    &__open {
+    &__openButton {
       width: 100%;
-      max-width: 310px;
+      max-width: 350px;
       height: 67px;
       background-color: #08a6e4;
       color: #ffffff;
@@ -46,7 +46,6 @@
 
   &__textPopular {
     width: 80%;
-    max-width: 500px;
     margin: 1rem auto;
     font-family: "Raleway", sans-serif;
     font-weight: 300;
@@ -59,6 +58,7 @@
     margin: 2rem auto;
 
     &__article {
+      margin-bottom: 2.5em;
       &__popularSvg {
         position: relative;
 
@@ -68,7 +68,7 @@
 
         &__svgIconPerson {
           position: absolute;
-          right: 15px;
+          right: 17px;
           top: 6px;
         }
 
@@ -218,95 +218,96 @@
     line-height: 42.26px;
     margin: 3rem auto 0;
   }
+  &__container {
+    &__pricing {
+      padding-bottom: 25px;
+      position: relative;
 
-  &__pricing {
-    padding-bottom: 25px;
-    position: relative;
+      &__card {
+        width: 80%;
+        margin: auto;
+        max-width: 500px;
 
-    &__card {
-      width: 80%;
-      margin: auto;
-      max-width: 500px;
+        &__info {
+          border: 1px solid #fb3b64;
+          border-radius: 18px;
+          width: 100%;
+          margin: 20px 0 0;
 
-      &__info {
-        border: 1px solid #fb3b64;
-        border-radius: 18px;
-        width: 100%;
-        margin: 20px 0 0;
+          &__leftInfo {
+            display: table-cell;
+            width: 48%;
+            vertical-align: middle;
+            padding-bottom: 1rem;
 
-        &__leftInfo {
-          display: table-cell;
-          width: 48%;
-          vertical-align: middle;
-          padding-bottom: 1rem;
+            &__h1Modality {
+              font-family: "Raleway", sans-serif;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 24px;
+              color: #13253b;
+            }
 
-          &__h1Modality {
-            font-family: "Raleway", sans-serif;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 24px;
-            color: #13253b;
+            &__pModality {
+              font-family: "Open Sans", sans-serif;
+              font-weight: 300;
+              font-size: 46px;
+              line-height: 64px;
+              color: #fb3b64;
+            }
+
+            .pModality--blue {
+              color: #08a6e4;
+            }
+
+            .pModality--green {
+              color: #55dfb4;
+            }
           }
 
-          &__pModality {
-            font-family: "Open Sans", sans-serif;
-            font-weight: 300;
-            font-size: 46px;
-            line-height: 64px;
-            color: #fb3b64;
-          }
+          &__rightInfo {
+            display: table-cell;
+            width: 48%;
+            vertical-align: middle;
+            text-align: start;
+            padding-bottom: 20px;
 
-          .pModality--blue {
-            color: #08a6e4;
-          }
-
-          .pModality--green {
-            color: #55dfb4;
-          }
-        }
-
-        &__rightInfo {
-          display: table-cell;
-          width: 48%;
-          vertical-align: middle;
-          text-align: start;
-          padding-bottom: 20px;
-
-          &__checkboxList {
-            p {
-              margin: 25px 0;
+            &__checkboxList {
+              p {
+                margin: 25px 0;
+              }
             }
           }
         }
-      }
 
-      .info--borderblue {
-        border: 1px solid #08a6e4;
-      }
+        .info--borderblue {
+          border: 1px solid #08a6e4;
+        }
 
-      .info--borderGreen {
-        border: 1px solid #55dfb4;
-      }
+        .info--borderGreen {
+          border: 1px solid #55dfb4;
+        }
 
-      &__basicButton {
-        position: absolute;
-        width: 150px;
-        height: 50px;
-        border: none;
-        border-radius: 23px;
-        color: #ffffff;
-        background-color: #eb476e;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
+        &__basicButton {
+          position: absolute;
+          width: 150px;
+          height: 50px;
+          border: none;
+          border-radius: 23px;
+          color: #ffffff;
+          background-color: #eb476e;
+          bottom: 0px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
 
-      .basicButton--blue {
-        background-color: #08a6e4;
-      }
+        .basicButton--blue {
+          background-color: #08a6e4;
+        }
 
-      .basicButton--green {
-        background-color: #55dfb4;
+        .basicButton--green {
+          background-color: #55dfb4;
+        }
       }
     }
   }
@@ -431,6 +432,93 @@
 
 @media only screen and (min-width: 1000px) {
   .main {
-    background-color: rgb(39, 194, 60);
+    &__opening {
+      &__title {
+        font-size: 49px;
+        line-height: 57px;
+      }
+    }
+    &__background {
+      height: 30rem;
+      background-image: url("./img/BackgroundDesktop.png");
+    }
+    &__textPopular {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+    }
+    &__sectionPopular {
+      display: flex;
+      gap: 12em;
+      margin: 6em auto;
+    }
+    &__groups {
+      padding: 4em 1em;
+      &__group {
+        width: 100%;
+        max-width: 1024px;
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        &__groupImg {
+          transform: scale(2);
+          margin: 4em;
+        }
+        &__groupText {
+          margin: 3em 1em 3em 0;
+          max-width: 38%;
+        }
+        .groupText--red {
+          border-bottom: 4px solid #fb3b64;
+        }
+        .groupText--blue {
+          border-bottom: 4px solid #08a6e4;
+        }
+      }
+      .group--desktop {
+        flex-direction: row-reverse;
+        padding: 2em;
+      }
+      &__groupTrumpet {
+        display: flex;
+        justify-content: space-between;
+        gap: 3em;
+        width: 100%;
+        max-width: 1024px;
+        border: none;
+        background-color: transparent;
+        &__divTextTrumpet {
+          border: 1px solid #e8e9ed;
+          background-color: #ffffff;
+          max-width: 55%;
+          padding: 3em 11em 5em 1.5em;
+          &__description {
+            padding-bottom: 3em;
+            border-bottom: 4px solid #55dfb4;
+          }
+          &__title {
+            padding-right: 1em;
+          }
+        }
+        &__divImgTrumpet {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          max-height: none;
+        }
+      }
+    }
+    &__container {
+      display: flex;
+      max-width: 1024px;
+      height: 550px;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+      &__pricing {
+        width: 100%;
+      }
+    }
   }
 }

@@ -68,7 +68,7 @@
 }
 .main__opening {
   width: 80%;
-  margin: 7rem auto 3rem;
+  margin: 7rem auto 0;
 }
 .main__opening__title {
   font-family: "Raleway", sans-serif;
@@ -83,9 +83,9 @@
   line-height: 23px;
   margin: 1.5rem 0 3rem;
 }
-.main__opening__open {
+.main__opening__openButton {
   width: 100%;
-  max-width: 310px;
+  max-width: 350px;
   height: 67px;
   background-color: #08a6e4;
   color: #ffffff;
@@ -106,7 +106,6 @@
 }
 .main__textPopular {
   width: 80%;
-  max-width: 500px;
   margin: 1rem auto;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
@@ -118,6 +117,9 @@
   width: max-content;
   margin: 2rem auto;
 }
+.main__sectionPopular__article {
+  margin-bottom: 2.5em;
+}
 .main__sectionPopular__article__popularSvg {
   position: relative;
 }
@@ -126,7 +128,7 @@
 }
 .main__sectionPopular__article__popularSvg__svgIconPerson {
   position: absolute;
-  right: 15px;
+  right: 17px;
   top: 6px;
 }
 .main__sectionPopular__article__popularSvg__svgIconEye {
@@ -252,64 +254,64 @@
   line-height: 42.26px;
   margin: 3rem auto 0;
 }
-.main__pricing {
+.main__container__pricing {
   padding-bottom: 25px;
   position: relative;
 }
-.main__pricing__card {
+.main__container__pricing__card {
   width: 80%;
   margin: auto;
   max-width: 500px;
 }
-.main__pricing__card__info {
+.main__container__pricing__card__info {
   border: 1px solid #fb3b64;
   border-radius: 18px;
   width: 100%;
   margin: 20px 0 0;
 }
-.main__pricing__card__info__leftInfo {
+.main__container__pricing__card__info__leftInfo {
   display: table-cell;
   width: 48%;
   vertical-align: middle;
   padding-bottom: 1rem;
 }
-.main__pricing__card__info__leftInfo__h1Modality {
+.main__container__pricing__card__info__leftInfo__h1Modality {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #13253b;
 }
-.main__pricing__card__info__leftInfo__pModality {
+.main__container__pricing__card__info__leftInfo__pModality {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 46px;
   line-height: 64px;
   color: #fb3b64;
 }
-.main__pricing__card__info__leftInfo .pModality--blue {
+.main__container__pricing__card__info__leftInfo .pModality--blue {
   color: #08a6e4;
 }
-.main__pricing__card__info__leftInfo .pModality--green {
+.main__container__pricing__card__info__leftInfo .pModality--green {
   color: #55dfb4;
 }
-.main__pricing__card__info__rightInfo {
+.main__container__pricing__card__info__rightInfo {
   display: table-cell;
   width: 48%;
   vertical-align: middle;
   text-align: start;
   padding-bottom: 20px;
 }
-.main__pricing__card__info__rightInfo__checkboxList p {
+.main__container__pricing__card__info__rightInfo__checkboxList p {
   margin: 25px 0;
 }
-.main__pricing__card .info--borderblue {
+.main__container__pricing__card .info--borderblue {
   border: 1px solid #08a6e4;
 }
-.main__pricing__card .info--borderGreen {
+.main__container__pricing__card .info--borderGreen {
   border: 1px solid #55dfb4;
 }
-.main__pricing__card__basicButton {
+.main__container__pricing__card__basicButton {
   position: absolute;
   width: 150px;
   height: 50px;
@@ -321,10 +323,10 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.main__pricing__card .basicButton--blue {
+.main__container__pricing__card .basicButton--blue {
   background-color: #08a6e4;
 }
-.main__pricing__card .basicButton--green {
+.main__container__pricing__card .basicButton--green {
   background-color: #55dfb4;
 }
 .main__questions {
@@ -429,8 +431,91 @@
 }
 
 @media only screen and (min-width: 1000px) {
-  .main {
-    background-color: rgb(39, 194, 60);
+  .main__opening__title {
+    font-size: 49px;
+    line-height: 57px;
+  }
+  .main__background {
+    height: 30rem;
+    background-image: url("./img/BackgroundDesktop.png");
+  }
+  .main__textPopular {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .main__sectionPopular {
+    display: flex;
+    gap: 12em;
+    margin: 6em auto;
+  }
+  .main__groups {
+    padding: 4em 1em;
+  }
+  .main__groups__group {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+  }
+  .main__groups__group__groupImg {
+    transform: scale(2);
+    margin: 4em;
+  }
+  .main__groups__group__groupText {
+    margin: 3em 1em 3em 0;
+    max-width: 38%;
+  }
+  .main__groups__group .groupText--red {
+    border-bottom: 4px solid #fb3b64;
+  }
+  .main__groups__group .groupText--blue {
+    border-bottom: 4px solid #08a6e4;
+  }
+  .main__groups .group--desktop {
+    flex-direction: row-reverse;
+    padding: 2em;
+  }
+  .main__groups__groupTrumpet {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    width: 100%;
+    max-width: 1024px;
+    border: none;
+    background-color: transparent;
+  }
+  .main__groups__groupTrumpet__divTextTrumpet {
+    border: 1px solid #e8e9ed;
+    background-color: #ffffff;
+    max-width: 55%;
+    padding: 3em 11em 5em 1.5em;
+  }
+  .main__groups__groupTrumpet__divTextTrumpet__description {
+    padding-bottom: 3em;
+    border-bottom: 4px solid #55dfb4;
+  }
+  .main__groups__groupTrumpet__divTextTrumpet__title {
+    padding-right: 1em;
+  }
+  .main__groups__groupTrumpet__divImgTrumpet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-height: none;
+  }
+  .main__container {
+    display: flex;
+    max-width: 1024px;
+    height: 550px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main__container__pricing {
+    width: 100%;
   }
 }
 .footer {

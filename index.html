@@ -48,7 +48,7 @@
         <p class="main__opening__subtitle">
           Open shop on our platform and increase your sales
         </p>
-        <button class="main__opening__open">Open your shop</button>
+        <button class="main__opening__openButton">Open your shop</button>
       </article>
       <article class="main__background"></article>
       <p class="main__textPopular">
@@ -105,7 +105,7 @@
         </article>
       </section>
       <section class="main__groups">
-        <article class="main__groups__group">
+        <article class="main__groups__group group--desktop">
           <div class="main__groups__group__groupImg">
             <img
               src="./img/Rectangle 5.png"
@@ -116,7 +116,7 @@
               class="main__groups__group__groupImg__macbook2"
             />
           </div>
-          <div class="main__groups__group__groupText">
+          <div class="main__groups__group__groupText groupText--red">
             <h1 class="main__groups__group__groupText__title">
               Be always first
             </h1>
@@ -138,7 +138,7 @@
               class="main__groups__group__groupImg__iPhone2"
             />
           </div>
-          <div class="main__info">
+          <div class="main__groups__group__groupText groupText--blue">
             <h1 class="main__groups__group__groupText__title">
               Your shop is where you are!
             </h1>
@@ -170,135 +170,163 @@
         </article>
       </section>
       <h1 class="main__pricingTitle">Pricing</h1>
-      <section class="main__pricing">
-        <article class="main__pricing__card">
-          <div class="main__pricing__card__info">
-            <div class="main__pricing__card__info__leftInfo">
-              <h1 class="main__pricing__card__info__leftInfo__h1Modality">
-                Basic
-              </h1>
-              <p class="main__pricing__card__info__leftInfo__pModality">$0</p>
+      <div class="main__container">
+        <section class="main__container__pricing">
+          <article class="main__container__pricing__card">
+            <div class="main__container__pricing__card__info">
+              <div class="main__container__pricing__card__info__leftInfo">
+                <h1
+                  class="main__container__pricing__card__info__leftInfo__h1Modality"
+                >
+                  Basic
+                </h1>
+                <p
+                  class="main__container__pricing__card__info__leftInfo__pModality"
+                >
+                  $0
+                </p>
+              </div>
+              <div class="main__container__pricing__card__info__rightInfo">
+                <ul
+                  class="main__container__pricing__card__info__rightInfo__checkboxList"
+                >
+                  <p>
+                    <img src="./svg/checkGreen.svg" class="checkGreen" />
+                    100 MB HDD
+                  </p>
+                  <p>
+                    <img src="./svg/checkGreen.svg" class="checkGreen" />
+                    1 Subdomain
+                  </p>
+                  <p>
+                    <img src="./svg/checkGreen.svg" class="checkGreen" />
+                    2 E-mails
+                  </p>
+                  <p>
+                    <img src="./svg/checkRed.svg" class="checkRed" />
+                    Two years license
+                  </p>
+                  <p>
+                    <img src="./svg/checkRed.svg" class="checkRed" />
+                    Full support
+                  </p>
+                </ul>
+              </div>
             </div>
-            <div class="main__pricing__card__info__rightInfo">
-              <ul class="main__pricing__card__info__rightInfo__checkboxList">
-                <p>
-                  <img src="./svg/checkGreen.svg" class="checkGreen" />
-                  100 MB HDD
+            <button class="main__container__pricing__card__basicButton">
+              Begin
+            </button>
+          </article>
+        </section>
+        <section class="main__container__pricing">
+          <article class="main__container__pricing__card">
+            <div class="main__container__pricing__card__info info--borderblue">
+              <div class="main__container__pricing__card__info__leftInfo">
+                <h1
+                  class="main__container__pricing__card__info__leftInfo__h1Modality"
+                >
+                  Profesional
+                </h1>
+                <p
+                  class="main__container__pricing__card__info__leftInfo__pModality pModality--blue"
+                >
+                  $25
                 </p>
-                <p>
-                  <img src="./svg/checkGreen.svg" class="checkGreen" />
-                  1 Subdomain
-                </p>
-                <p>
-                  <img src="./svg/checkGreen.svg" class="checkGreen" />
-                  2 E-mails
-                </p>
-                <p>
-                  <img src="./svg/checkRed.svg" class="checkRed" />
-                  Two years license
-                </p>
-                <p>
-                  <img src="./svg/checkRed.svg" class="checkRed" />
-                  Full support
-                </p>
-              </ul>
+                <h6
+                  class="main__container__pricing__card__info__leftInfo__h4Modality"
+                >
+                  Limited offer
+                </h6>
+              </div>
+              <div class="main__container__pricing__card__info__rightInfo">
+                <ul
+                  class="main__container__pricing__card__info__rightInfo__checkboxList"
+                >
+                  <p>
+                    <img src="./svg/checkGreen.svg" class="checkGreen" />
+                    500 MB HDD
+                  </p>
+                  <p>
+                    <img src="./svg/checkGreen.svg" class="checkGreen" />
+                    2 Subdomain
+                  </p>
+                  <p>
+                    <img src="./svg/checkGreen.svg" class="checkGreen" />
+                    5 E-mails
+                  </p>
+                  <p>
+                    <img src="./svg/checkGreen.svg" class="checkGreen" />
+                    one years license
+                  </p>
+                  <p>
+                    <img src="./svg/checkRed.svg" class="checkRed" />
+                    Full support
+                  </p>
+                </ul>
+              </div>
             </div>
-          </div>
-          <button class="main__pricing__card__basicButton">Begin</button>
-        </article>
-      </section>
-      <section class="main__pricing">
-        <article class="main__pricing__card">
-          <div class="main__pricing__card__info info--borderblue">
-            <div class="main__pricing__card__info__leftInfo">
-              <h1 class="main__pricing__card__info__leftInfo__h1Modality">
-                Profesional
-              </h1>
-              <p
-                class="main__pricing__card__info__leftInfo__pModality pModality--blue"
-              >
-                $25
-              </p>
-              <h6 class="main__pricing__card__info__leftInfo__h4Modality">
-                Limited offer
-              </h6>
+            <button
+              class="main__container__pricing__card__basicButton basicButton--blue"
+            >
+              Begin
+            </button>
+          </article>
+        </section>
+        <section class="main__container__pricing">
+          <article class="main__container__pricing__card">
+            <div class="main__container__pricing__card__info info--borderGreen">
+              <div class="main__container__pricing__card__info__leftInfo">
+                <h1
+                  class="main__container__pricing__card__info__leftInfo__h1Modality"
+                >
+                  Premiun
+                </h1>
+                <p
+                  class="main__container__pricing__card__info__leftInfo__pModality pModality--green"
+                >
+                  $60
+                </p>
+                <h6
+                  class="main__container__pricing__card__info__leftInfo__h4Modality"
+                >
+                  Limited offer
+                </h6>
+              </div>
+              <div class="main__container__pricing__card__info__rightInfo">
+                <ul
+                  class="main__container__pricing__card__info__rightInfo__checkboxList"
+                >
+                  <p>
+                    <img src="./svg/checkGreen.svg" class="checkGreen" />
+                    2 GB HDD
+                  </p>
+                  <p>
+                    <img src="./svg/checkGreen.svg" class="checkGreen" />
+                    5 Subdomain
+                  </p>
+                  <p>
+                    <img src="./svg/checkGreen.svg" class="checkGreen" />
+                    20 E-mails
+                  </p>
+                  <p>
+                    <img src="./svg/checkGreen.svg" class="checkRed" />
+                    Two years license
+                  </p>
+                  <p>
+                    <img src="./svg/checkGreen.svg" class="checkRed" />
+                    Full support
+                  </p>
+                </ul>
+              </div>
             </div>
-            <div class="main__pricing__card__info__rightInfo">
-              <ul class="main__pricing__card__info__rightInfo__checkboxList">
-                <p>
-                  <img src="./svg/checkGreen.svg" class="checkGreen" />
-                  500 MB HDD
-                </p>
-                <p>
-                  <img src="./svg/checkGreen.svg" class="checkGreen" />
-                  2 Subdomain
-                </p>
-                <p>
-                  <img src="./svg/checkGreen.svg" class="checkGreen" />
-                  5 E-mails
-                </p>
-                <p>
-                  <img src="./svg/checkGreen.svg" class="checkGreen" />
-                  one years license
-                </p>
-                <p>
-                  <img src="./svg/checkRed.svg" class="checkRed" />
-                  Full support
-                </p>
-              </ul>
-            </div>
-          </div>
-          <button class="main__pricing__card__basicButton basicButton--blue">
-            Begin
-          </button>
-        </article>
-      </section>
-      <section class="main__pricing">
-        <article class="main__pricing__card">
-          <div class="main__pricing__card__info info--borderGreen">
-            <div class="main__pricing__card__info__leftInfo">
-              <h1 class="main__pricing__card__info__leftInfo__h1Modality">
-                Premiun
-              </h1>
-              <p
-                class="main__pricing__card__info__leftInfo__pModality pModality--green"
-              >
-                $60
-              </p>
-              <h6 class="main__pricing__card__info__leftInfo__h4Modality">
-                Limited offer
-              </h6>
-            </div>
-            <div class="main__pricing__card__info__rightInfo">
-              <ul class="main__pricing__card__info__rightInfo__checkboxList">
-                <p>
-                  <img src="./svg/checkGreen.svg" class="checkGreen" />
-                  2 GB HDD
-                </p>
-                <p>
-                  <img src="./svg/checkGreen.svg" class="checkGreen" />
-                  5 Subdomain
-                </p>
-                <p>
-                  <img src="./svg/checkGreen.svg" class="checkGreen" />
-                  20 E-mails
-                </p>
-                <p>
-                  <img src="./svg/checkGreen.svg" class="checkRed" />
-                  Two years license
-                </p>
-                <p>
-                  <img src="./svg/checkGreen.svg" class="checkRed" />
-                  Full support
-                </p>
-              </ul>
-            </div>
-          </div>
-          <button class="main__pricing__card__basicButton basicButton--green">
-            Begin
-          </button>
-        </article>
-      </section>
+            <button
+              class="main__container__pricing__card__basicButton basicButton--green"
+            >
+              Begin
+            </button>
+          </article>
+        </section>
+      </div>
       <section class="main__questions">
         <h1 class="main__questions__questionsTitle">Any questions?</h1>
         <p class="main__questions__subtitle">
