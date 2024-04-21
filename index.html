@@ -173,7 +173,7 @@
       <div class="main__container">
         <section class="main__container__pricing">
           <article class="main__container__pricing__card">
-            <div class="main__container__pricing__card__info">
+            <div class="main__container__pricing__card__info info--borderRed">
               <div class="main__container__pricing__card__info__leftInfo">
                 <h1
                   class="main__container__pricing__card__info__leftInfo__h1Modality"
@@ -185,6 +185,11 @@
                 >
                   $0
                 </p>
+                <h6
+                  class="main__container__pricing__card__info__leftInfo__h4Modality h4Modality--red"
+                >
+                  Limited offer
+                </h6>
               </div>
               <div class="main__container__pricing__card__info__rightInfo">
                 <ul
@@ -212,10 +217,12 @@
                   </p>
                 </ul>
               </div>
+              <button
+                class="main__container__pricing__card__basicButton basicButton--red"
+              >
+                Begin
+              </button>
             </div>
-            <button class="main__container__pricing__card__basicButton">
-              Begin
-            </button>
           </article>
         </section>
         <section class="main__container__pricing">
@@ -264,12 +271,12 @@
                   </p>
                 </ul>
               </div>
+              <button
+                class="main__container__pricing__card__basicButton basicButton--blue"
+              >
+                Begin
+              </button>
             </div>
-            <button
-              class="main__container__pricing__card__basicButton basicButton--blue"
-            >
-              Begin
-            </button>
           </article>
         </section>
         <section class="main__container__pricing">
@@ -318,54 +325,82 @@
                   </p>
                 </ul>
               </div>
+              <button
+                class="main__container__pricing__card__basicButton basicButton--green"
+              >
+                Begin
+              </button>
             </div>
-            <button
-              class="main__container__pricing__card__basicButton basicButton--green"
-            >
-              Begin
-            </button>
           </article>
         </section>
       </div>
       <section class="main__questions">
-        <h1 class="main__questions__questionsTitle">Any questions?</h1>
-        <p class="main__questions__subtitle">
-          Leave your email address or call us!
-        </p>
-        <article class="main__questions__mail">
-          <img src="./svg/mail.svg" class="main__questions__mail__svgMail" />
-          <p class="main__questions__mail__textMail">info@bestshop.xyz</p>
-        </article>
-        <article class="main__questions__phone">
-          <img src="./svg/Phone.svg" class="main__questions__phone__svgPhone" />
-          <p class="main__questions__phone__numberPhone">123 456 789</p>
-        </article>
-        <article class="main__questions__form">
-          <p class="main__questions__form__formP">NAME</p>
-          <input type="text" class="main__questions__form__inputForm" />
-          <p class="main__questions__form__formP">EMAIL</p>
-          <input type="email" class="main__questions__form__inputForm" />
-        </article>
-        <article class="main__questions__check">
-          <input
-            type="checkbox"
-            class="main__questions__check__checkboxCheck"
-          />
-          <p class="main__questions__check__pCheck">
-            I hereby give consent for my personal data included in my
-            application to be processed for the purposes of the recruitment
-            process under the European Parliament’s and Council of the European
-            Union Regulation on the Protection of Natural Persons as of 27 April
-            2016, with regard to the processing of personal data and on the free
-            movement of such data, and repealing Directive 95/46/EC (Data
-            Protection Directive)
+        <div class="main__questions__container">
+          <h1 class="main__questions__container__questionsTitle">
+            Any questions?
+          </h1>
+          <p class="main__questions__container__subtitle">
+            Leave your email address or call us!
           </p>
-          <article class="main__questions__check__sendForm">
-            <button class="main__questions__check__sendForm__sendFormButton">
-              Send
-            </button>
+          <div class="main__questions__container__contact">
+            <article class="main__questions__container__contact__mail">
+              <img
+                src="./svg/mail.svg"
+                class="main__questions__container__contact__mail__svgMail"
+              />
+              <p class="main__questions__container__contact__mail__textMail">
+                info@bestshop.xyz
+              </p>
+            </article>
+            <article class="main__questions__container__contact__phone">
+              <img
+                src="./svg/Phone.svg"
+                class="main__questions__container__contact__phone__svgPhone"
+              />
+              <p
+                class="main__questions__container__contact__phone__numberPhone"
+              >
+                123 456 789
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="main__questions__containerForm">
+          <article class="main__questions__containerForm__form">
+            <p class="main__questions__containerForm__form__formP">NAME</p>
+            <input
+              type="text"
+              class="main__questions__containerForm__form__inputForm"
+            />
+            <p class="main__questions__containerForm__form__formP">EMAIL</p>
+            <input
+              type="email"
+              class="main__questions__containerForm__form__inputForm"
+            />
           </article>
-        </article>
+          <article class="main__questions__containerForm__check">
+            <input
+              type="checkbox"
+              class="main__questions__containerForm__check__checkboxCheck"
+            />
+            <p class="main__questions__containerForm__check__pCheck">
+              I hereby give consent for my personal data included in my
+              application to be processed for the purposes of the recruitment
+              process under the European Parliament’s and Council of the
+              European Union Regulation on the Protection of Natural Persons as
+              of 27 April 2016, with regard to the processing of personal data
+              and on the free movement of such data, and repealing Directive
+              95/46/EC (Data Protection Directive)
+            </p>
+            <article class="main__questions__containerForm__check__sendForm">
+              <button
+                class="main__questions__containerForm__check__sendForm__sendFormButton"
+              >
+                Send
+              </button>
+            </article>
+          </article>
+        </div>
       </section>
     </main>
     <footer class="footer">

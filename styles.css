@@ -1,6 +1,6 @@
 .header {
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
-  padding: 1em 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
+  padding: 1rem 0.3rem;
   height: 4em;
 }
 .header__logo {
@@ -13,14 +13,15 @@
   color: #08a6e4;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  font-size: 2em;
-  line-height: 37px;
+  font-size: 2rem;
+  line-height: 2.313rem;
 }
 .header__menu {
   display: inline-block;
   text-align: right;
   width: 45%;
   height: 100%;
+  transform: translateY(-6px);
 }
 .header__menu__svg {
   display: inline;
@@ -54,9 +55,9 @@
     height: 100%;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    font-size: 11px;
-    line-height: 15px;
-    letter-spacing: 3.28px;
+    font-size: 0.6em;
+    line-height: 0.93em;
+    letter-spacing: 0.2em;
   }
   .header__menu__menuDesktop .article--border {
     border-bottom: 4px solid #08a6e4;
@@ -73,29 +74,29 @@
 .main__opening__title {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 41.09px;
+  font-size: 2.18em;
+  line-height: 2.5em;
 }
 .main__opening__subtitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 23px;
-  margin: 1.5rem 0 3rem;
+  margin: 1.5em 0 3em;
 }
 .main__opening__openButton {
   width: 100%;
   max-width: 350px;
-  height: 67px;
+  height: 4.18em;
   background-color: #08a6e4;
   color: #ffffff;
   border: none;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.2901960784);
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  line-height: 22px;
+  line-height: 1.3rem;
 }
 .main__background {
   height: 18rem;
@@ -106,16 +107,16 @@
 }
 .main__textPopular {
   width: 80%;
-  margin: 1rem auto;
+  margin: 0 auto 1em;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 1.87rem;
+  line-height: 2.18rem;
 }
 .main__sectionPopular {
   width: -moz-max-content;
   width: max-content;
-  margin: 2rem auto;
+  margin: 2em auto;
 }
 .main__sectionPopular__article {
   margin-bottom: 2.5em;
@@ -128,34 +129,34 @@
 }
 .main__sectionPopular__article__popularSvg__svgIconPerson {
   position: absolute;
-  right: 17px;
-  top: 6px;
+  right: 1em;
+  top: 0.37em;
 }
 .main__sectionPopular__article__popularSvg__svgIconEye {
   position: absolute;
-  right: 13px;
-  top: 11px;
+  right: 0.8em;
+  top: 0.7em;
 }
 .main__sectionPopular__article__popularSvg__svgIconCatalog {
   position: absolute;
-  right: 16px;
-  top: 6px;
+  right: 1em;
+  top: 0.37em;
 }
 .main__sectionPopular__article__pNumber {
-  margin: 15px auto;
+  margin: 1em auto;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 1.2;
   letter-spacing: 5.96px;
-  max-width: 136px;
+  max-width: 8.5em;
 }
 .main__sectionPopular__article__pDescription {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 1.1rem;
+  line-height: 1em;
   color: #a5a5a5;
-  max-width: 136px;
+  max-width: 8.5em;
 }
 .main__groups {
   background-color: #f7f7f7;
@@ -164,9 +165,9 @@
 .main__groups__group {
   border: 1px solid #e8e9ed;
   border-radius: 5px;
-  margin: 2rem auto;
+  margin: 2em auto;
   width: 80%;
-  max-width: 500px;
+  max-width: 30rem;
   text-align: start;
   padding: 0 1rem;
   background-color: #ffffff;
@@ -174,40 +175,40 @@
 .main__groups__group__groupImg {
   text-align: center;
   margin: auto;
-  padding: 1rem 0 1.5rem;
+  padding: 1em 0 1.5em;
   width: -moz-max-content;
   width: max-content;
   position: relative;
 }
 .main__groups__group__groupImg__rectangle {
   position: absolute;
-  right: 15px;
+  right: 1em;
 }
 .main__groups__group__groupImg__macbook2 {
   position: relative;
-  top: 20px;
-  right: 20px;
+  top: 1.2em;
+  right: 1.2em;
 }
 .main__groups__group__groupImg__ellipse3 {
   position: absolute;
-  right: 15px;
+  right: 1em;
 }
 .main__groups__group__groupImg__iPhone2 {
   position: relative;
-  top: 10px;
-  left: 25px;
+  top: 0.62em;
+  left: 1.5em;
 }
 .main__groups__group__groupText__title {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 35.22px;
+  font-size: 1.87rem;
+  line-height: 2rem;
   margin: 1rem 0;
 }
 .main__groups__group__groupText__description {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.87rem;
   line-height: 19px;
   margin: 1.2rem 0;
 }
@@ -226,21 +227,21 @@
 .main__groups__groupTrumpet__divTextTrumpet__title {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 1.87rem;
   line-height: 35.22px;
   margin: 1rem 0;
 }
 .main__groups__groupTrumpet__divTextTrumpet__description {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.87rem;
   line-height: 19px;
   margin: 1.2rem 0;
 }
 .main__groups__groupTrumpet__divImgTrumpet {
   background-color: #55dfb4;
   overflow: hidden;
-  max-height: 195px;
+  max-height: 12.18rem;
   border: 1px solid #e8e9ed;
   border-radius: 5px;
 }
@@ -250,24 +251,24 @@
 .main__pricingTitle {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 42.26px;
   margin: 3rem auto 0;
 }
 .main__container__pricing {
-  padding-bottom: 25px;
+  padding-bottom: 1.56em;
   position: relative;
 }
 .main__container__pricing__card {
   width: 80%;
   margin: auto;
-  max-width: 500px;
+  max-width: 30rem;
 }
 .main__container__pricing__card__info {
   border: 1px solid #fb3b64;
   border-radius: 18px;
   width: 100%;
-  margin: 20px 0 0;
+  margin: 1.25em 0 0;
 }
 .main__container__pricing__card__info__leftInfo {
   display: table-cell;
@@ -278,16 +279,19 @@
 .main__container__pricing__card__info__leftInfo__h1Modality {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 24px;
   color: #13253b;
 }
 .main__container__pricing__card__info__leftInfo__pModality {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 46px;
+  font-size: 2.87rem;
   line-height: 64px;
   color: #fb3b64;
+}
+.main__container__pricing__card__info__leftInfo .h4Modality--red {
+  visibility: hidden;
 }
 .main__container__pricing__card__info__leftInfo .pModality--blue {
   color: #08a6e4;
@@ -300,10 +304,10 @@
   width: 48%;
   vertical-align: middle;
   text-align: start;
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
 }
 .main__container__pricing__card__info__rightInfo__checkboxList p {
-  margin: 25px 0;
+  margin: 1.56em 0;
 }
 .main__container__pricing__card .info--borderblue {
   border: 1px solid #08a6e4;
@@ -313,13 +317,13 @@
 }
 .main__container__pricing__card__basicButton {
   position: absolute;
-  width: 150px;
-  height: 50px;
+  width: 9.37rem;
+  height: 3.12rem;
   border: none;
   border-radius: 23px;
   color: #ffffff;
   background-color: #eb476e;
-  bottom: 0px;
+  bottom: 0rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -330,70 +334,70 @@
   background-color: #55dfb4;
 }
 .main__questions {
-  margin: 2rem auto 1rem;
+  margin: 2em auto 1em;
   text-align: start;
-  max-width: 500px;
+  max-width: 30rem;
   padding: 0 1.5rem;
 }
-.main__questions__questions__questionsTitle {
+.main__questions__container__questionsTitle {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 46.96px;
 }
-.main__questions__questions__subtitle {
+.main__questions__container__subtitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
 }
-.main__questions__mail {
+.main__questions__container__contact__mail {
   margin: 1.5rem 0 0.5rem;
 }
-.main__questions__mail__svgMail {
+.main__questions__container__contact__mail__svgMail {
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.4rem;
 }
-.main__questions__mail__textMail {
+.main__questions__container__contact__mail__textMail {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
   color: #a5a5a5;
 }
-.main__questions__phone__svgPhone {
+.main__questions__container__contact__phone__svgPhone {
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.4rem;
 }
-.main__questions__phone__numberPhone {
+.main__questions__container__contact__phone__numberPhone {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
   color: #a5a5a5;
 }
-.main__questions__form__formP {
+.main__questions__containerForm__form__formP {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 11px;
-  line-height: 14.98px;
-  letter-spacing: 3.28px;
+  font-size: 0.68rem;
+  line-height: 0.87rem;
+  letter-spacing: 0.28rem;
   color: #08a6e4;
   margin: 2rem 0 1.8rem;
 }
-.main__questions__form__inputForm {
+.main__questions__containerForm__form__inputForm {
   border: none;
   border-bottom: 1px solid #9a9595;
   width: 100%;
 }
-.main__questions__check {
+.main__questions__containerForm__check {
   margin: 2rem 0;
 }
-.main__questions__check__checkboxCheck {
+.main__questions__containerForm__check__checkboxCheck {
   display: inline-block;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -406,22 +410,22 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.main__questions__check__pCheck {
+.main__questions__containerForm__check__pCheck {
   display: inline-block;
   width: 85%;
   vertical-align: top;
   margin: 0 0.5rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16.34px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   color: #707070;
 }
-.main__questions__check__sendForm {
+.main__questions__containerForm__check__sendForm {
   margin: 2rem 0 2.5rem;
   text-align: end;
 }
-.main__questions__check__sendForm__sendFormButton {
+.main__questions__containerForm__check__sendForm__sendFormButton {
   border: none;
   border-radius: 35px;
   background-color: #08a6e4;
@@ -432,17 +436,17 @@
 
 @media only screen and (min-width: 1000px) {
   .main__opening__title {
-    font-size: 49px;
-    line-height: 57px;
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
   .main__background {
     height: 30rem;
     background-image: url("./img/BackgroundDesktop.png");
   }
   .main__textPopular {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
+    font-weight: 25rem;
+    font-size: 2.25rem;
+    line-height: 2.6rem;
   }
   .main__sectionPopular {
     display: flex;
@@ -454,7 +458,7 @@
   }
   .main__groups__group {
     width: 100%;
-    max-width: 1024px;
+    max-width: 64rem;
     display: flex;
     justify-content: space-between;
     padding: 1em;
@@ -482,7 +486,7 @@
     justify-content: space-between;
     gap: 3em;
     width: 100%;
-    max-width: 1024px;
+    max-width: 64rem;
     border: none;
     background-color: transparent;
   }
@@ -506,20 +510,92 @@
     width: 100%;
     max-height: none;
   }
+  .main__pricingTitle {
+    margin: 3em 0 1.3em;
+  }
   .main__container {
-    display: flex;
-    max-width: 1024px;
-    height: 550px;
+    max-width: 79.1em;
     margin: auto;
+    padding: 1em;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
+  .main__container__pricing:hover {
+    transform: scale(1.1);
   }
   .main__container__pricing {
+    width: 30%;
+  }
+  .main__container__pricing__card {
     width: 100%;
+  }
+  .main__container__pricing__card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0 1em;
+  }
+  .main__container__pricing__card__info__rightInfo {
+    text-align: center;
+  }
+  .main__container__pricing__card .info--borderRed:hover {
+    box-shadow: 0.3rem 0.62rem 1.6rem rgba(235, 71, 109, 0.3294117647);
+  }
+  .main__container__pricing__card .info--borderblue:hover {
+    box-shadow: 0.3rem 0.62rem 1.6rem rgba(7, 171, 230, 0.3215686275);
+  }
+  .main__container__pricing__card .info--borderGreen:hover {
+    box-shadow: 0.3rem 0.62rem 1.6rem rgba(85, 223, 179, 0.3490196078);
+  }
+  .main__container__pricing__card .basicButton--red:hover {
+    box-shadow: 0.3rem 0.62rem 1.6rem rgba(235, 71, 109, 0.3294117647);
+  }
+  .main__container__pricing__card .basicButton--blue:hover {
+    box-shadow: 0.3rem 0.62rem 1.6rem rgba(7, 171, 230, 0.3215686275);
+  }
+  .main__container__pricing__card .basicButton--green:hover {
+    box-shadow: 0.3rem 0.62rem 1.6rem rgba(85, 223, 179, 0.3490196078);
+  }
+  .main__questions {
+    display: flex;
+    justify-content: space-between;
+    max-width: 56rem;
+    padding: 0em;
+    margin: 8em auto 4em;
+  }
+  .main__questions__container__questionsTitle {
+    font-size: 3em;
+    margin-bottom: 2em;
+  }
+  .main__questions__container__contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+  }
+  .main__questions__container__contact__mail {
+    margin: 0em;
+  }
+  .main__questions__containerForm {
+    width: 50%;
+  }
+  .main__questions__containerForm__form {
+    margin-bottom: 2em;
+  }
+  .main__questions__containerForm__form__formP {
+    margin-top: 0.5em;
+  }
+  .main__questions__containerForm__check {
+    margin: 0em;
+  }
+  .main__questions__containerForm__check__pCheck {
+    width: 90%;
+  }
+  .main__questions__containerForm__check__sendForm {
+    margin-bottom: 0em;
   }
 }
 .footer {
-  box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0em -0.3em 2.5em rgba(0, 0, 0, 0.2);
   padding: 1.5rem 1rem;
 }
 .footer__rights {
@@ -530,15 +606,16 @@
 .footer__rights__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  font-size: 26px;
-  line-height: 30px;
+  font-size: 1.62rem;
+  line-height: 1.87rem;
   color: #08a6e4;
+  margin-bottom: 0.3rem;
 }
 .footer__rights__reserved {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 11px;
-  line-height: 14.98px;
+  font-size: 0.68rem;
+  line-height: 0.9rem;
   color: #a5a5a5;
 }
 .footer__rrss {
@@ -547,15 +624,15 @@
   text-align: right;
 }
 .footer__rrss__svgTwitter {
-  margin-right: 1rem;
+  margin-right: 1em;
 }
 .footer__rrss__svgFacebook {
-  margin-right: 1rem;
+  margin-right: 1em;
 }
 
 @media only screen and (min-width: 1000px) {
   .footer {
-    background-color: rgb(207, 46, 159);
+    padding: 1.5em 8em;
   }
 }
 * {
