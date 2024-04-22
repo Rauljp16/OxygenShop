@@ -129,7 +129,7 @@
 }
 .main__sectionPopular__article__popularSvg__svgIconPerson {
   position: absolute;
-  right: 1em;
+  right: 1.8em;
   top: 0.37em;
 }
 .main__sectionPopular__article__popularSvg__svgIconEye {
@@ -452,6 +452,9 @@
     display: flex;
     gap: 12em;
     margin: 6em auto;
+  }
+  .main__sectionPopular__article__popularSvg__svgIconPerson {
+    right: 0.5em;
   }
   .main__groups {
     padding: 4em 1em;
