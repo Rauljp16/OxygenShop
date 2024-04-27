@@ -282,7 +282,6 @@
             font-size: 1rem;
             line-height: 23px;
 
-
             &__checkboxList {
               p {
                 margin: 1.56em 0;
@@ -412,7 +411,7 @@
           height: 1.5rem;
           border: 1px solid #95989a;
           border-radius: 4px;
-          // background-image: url(./svg/Vector.svg);
+          background-image: url(./svg/Vector.svg);
           background-repeat: no-repeat;
           background-position: center;
         }
@@ -474,14 +473,11 @@
 
       &__article {
         &__popularSvg {
-
           &__svgIconPerson {
             right: 0.5em;
           }
         }
       }
-
-
     }
 
     &__groups {
@@ -620,11 +616,9 @@
       margin: 8em auto 4em;
 
       &__container {
-
         &__questionsTitle {
           font-size: 3em;
           margin-bottom: 2em;
-
         }
 
         &__contact {
