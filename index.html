@@ -25,22 +25,42 @@
         <p class="nav__logo__text">OXYGENShop</p>
       </section>
       <section class="nav__menu">
-        <section class="nav__menu__menuDesktop">
-          <article class="nav__menu__menuDesktop__article article--border">
-            <a>WHY US</a>
-          </article>
-          <article class="nav__menu__menuDesktop__article">
-            <a>BENEFITS</a>
-          </article>
-          <article class="nav__menu__menuDesktop__article">
-            <a>PRICES</a>
-          </article>
-          <article class="nav__menu__menuDesktop__article">
-            <a>CONTACT</a>
-          </article>
-        </section>
+        <ul id="menu" class="nav__menu__menuDesktop">
+          <li class="nav__menu__menuDesktop__article article--border">
+            <a
+              href="#textPopular"
+              onclick="toggleMenu()"
+              class="nav__menu__menuDesktop__article__anchor"
+              >WHY US</a
+            >
+          </li>
+          <li class="nav__menu__menuDesktop__article">
+            <a
+              href="#groups"
+              onclick="toggleMenu()"
+              class="nav__menu__menuDesktop__article__anchor"
+              >BENEFITS</a
+            >
+          </li>
+          <li class="nav__menu__menuDesktop__article">
+            <a
+              href="#pricingTitle"
+              onclick="toggleMenu()"
+              class="nav__menu__menuDesktop__article__anchor"
+              >PRICES</a
+            >
+          </li>
+          <li class="nav__menu__menuDesktop__article">
+            <a
+              href="#questions"
+              onclick="toggleMenu()"
+              class="nav__menu__menuDesktop__article__anchor"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
       </section>
-      <img src="./svg/Menu.svg" class="nav__svg" />
+      <img id="svgMenu" src="./svg/Menu.svg" class="nav__svg" alt="Menu" />
     </nav>
     <main class="main">
       <article class="main__opening">
@@ -51,7 +71,7 @@
         <button class="main__opening__openButton">Open your shop</button>
       </article>
       <article class="main__background"></article>
-      <p class="main__textPopular">
+      <p id="textPopular" class="main__textPopular">
         The most popular sales platform in country
       </p>
       <section class="main__sectionPopular">
@@ -104,7 +124,7 @@
           </p>
         </article>
       </section>
-      <section class="main__groups">
+      <section id="groups" class="main__groups">
         <article class="main__groups__group group--desktop">
           <div class="main__groups__group__groupImg">
             <img
@@ -169,7 +189,7 @@
           </div>
         </article>
       </section>
-      <h1 class="main__pricingTitle">Pricing</h1>
+      <h1 id="pricingTitle" class="main__pricingTitle">Pricing</h1>
       <div class="main__container">
         <section class="main__container__pricing">
           <article class="main__container__pricing__card">
@@ -334,7 +354,7 @@
           </article>
         </section>
       </div>
-      <section class="main__questions">
+      <section id="questions" class="main__questions">
         <div class="main__questions__container">
           <h1 class="main__questions__container__questionsTitle">
             Any questions?

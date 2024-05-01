@@ -1,15 +1,20 @@
 //variables
-const nav__menu = document.querySelector(".nav__menu");
-const nav__menu__menuDesktop = document.querySelector(
-  ".nav__menu__menuDesktop"
-);
+const menu = document.getElementById("menu");
 const nav__svg = document.querySelector(".nav__svg");
 const nav__logo = document.querySelector(".nav__logo");
 
-nav__svg.addEventListener("click", () => {
-  nav__menu__menuDesktop.classList.toggle("menuDown");
-  nav__logo.style.display = "block";
-});
+const toggleMenu = () => {
+  menu.classList.remove("menuDown");
+  nav__svg.src = "./svg/Menu.svg";
+};
 
-//modificar la funcion anterior y seguir con los estilos para lograr
-//que el down se quede 100%
+nav__svg.addEventListener("click", () => {
+  menu.classList.toggle("menuDown");
+  if (menu.className != "nav__menu__menuDesktop") {
+    nav__svg.src = "./svg/close.svg";
+    nav__svg.style.transform = "rotate(" + 180 + "deg)";
+  } else {
+    nav__svg.src = "./svg/Menu.svg";
+    nav__svg.style.transform = "rotate(" + -180 + "deg)";
+  }
+});
