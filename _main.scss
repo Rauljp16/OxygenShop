@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 .main {
   text-align: center;
 
@@ -444,6 +448,30 @@
       }
     }
   }
+
+  &__returnToTop {
+    visibility: hidden;
+    position: fixed;
+    bottom: 3.5em;
+    right: 0.8em;
+    cursor: pointer;
+
+    &__anchor {
+      img {
+        background-color: transparent;
+        border: none;
+        box-shadow: 2px 4px 9px #631b1b;
+        border-radius: 50%;
+        background-color: #c53939;
+        width: 2.5em;
+        height: 2.5em;
+      }
+
+      img:hover {
+        scale: 1.2;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -653,6 +681,18 @@
           &__sendForm {
             margin-bottom: 0em;
           }
+        }
+      }
+    }
+
+    &__returnToTop {
+      bottom: 6.5em;
+      right: 0.8em;
+
+      &__anchor {
+        img {
+          width: 3.5em;
+          height: 3.5em;
         }
       }
     }

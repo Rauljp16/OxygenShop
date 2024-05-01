@@ -1,4 +1,5 @@
-//variables
+//Menú desplegable
+
 const menu = document.getElementById("menu");
 const nav__svg = document.querySelector(".nav__svg");
 const nav__logo = document.querySelector(".nav__logo");
@@ -19,16 +20,37 @@ nav__svg.addEventListener("click", () => {
     nav__svg.style.transform = "rotate(" + -180 + "deg)";
   }
 });
+
 //barra porcentaje de scroll
 
 const percentage = document.getElementById("percentage__scroller");
+const returnToTop = document.querySelector(".main__returnToTop");
+let scrollPercentage;
 
 window.addEventListener("load", () => {
   const update = () => {
-    percentage.style.width = `${
-      (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100
-    }%`;
+    scrollPercentage =
+      (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
+      100;
+    percentage.style.width = `${scrollPercentage}%`;
+    if (scrollPercentage > 25) {
+      returnToTop.style.visibility = "visible";
+    } else {
+      returnToTop.style.visibility = "hidden";
+    }
   };
   update();
   window.addEventListener("scroll", update);
 });
+
+//button to top
+
+function handleClick() {
+  setTimeout(delay, 2000);
+}
+
+const delay = () => {
+  window.scrollTo({
+    top: 0,
+  });
+};
