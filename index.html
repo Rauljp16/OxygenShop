@@ -19,7 +19,10 @@
     <title>Proyecto modulo 1</title>
   </head>
 
-  <body>
+  <body class="body">
+    <section class="percentage">
+      <div id="percentage__scroller" class="percentage__scroller"></div>
+    </section>
     <nav class="nav">
       <section class="nav__logo">
         <p class="nav__logo__text">OXYGENShop</p>
@@ -28,7 +31,7 @@
         <ul id="menu" class="nav__menu__menuDesktop">
           <li class="nav__menu__menuDesktop__article article--border">
             <a
-              href="#textPopular"
+              href="#main__background"
               onclick="toggleMenu()"
               class="nav__menu__menuDesktop__article__anchor"
               >WHY US</a
@@ -70,7 +73,7 @@
         </p>
         <button class="main__opening__openButton">Open your shop</button>
       </article>
-      <article class="main__background"></article>
+      <article id="main__background" class="main__background"></article>
       <p id="textPopular" class="main__textPopular">
         The most popular sales platform in country
       </p>
