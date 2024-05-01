@@ -1,448 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Proyecto modulo 1</title>
-  </head>
 
-  <body class="body">
-    <section class="percentage">
-      <div id="percentage__scroller" class="percentage__scroller"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Proyecto modulo 1</title>
+</head>
+
+<body class="body">
+  <section class="percentage">
+    <div id="percentage__scroller" class="percentage__scroller"></div>
+  </section>
+  <nav class="nav">
+    <section class="nav__logo">
+      <p class="nav__logo__text">OXYGENShop</p>
     </section>
-    <nav class="nav">
-      <section class="nav__logo">
-        <p class="nav__logo__text">OXYGENShop</p>
-      </section>
-      <section class="nav__menu">
-        <ul id="menu" class="nav__menu__menuDesktop">
-          <li class="nav__menu__menuDesktop__article article--border">
-            <a
-              href="#main__background"
-              onclick="toggleMenu()"
-              class="nav__menu__menuDesktop__article__anchor"
-              >WHY US</a
-            >
-          </li>
-          <li class="nav__menu__menuDesktop__article">
-            <a
-              href="#groups"
-              onclick="toggleMenu()"
-              class="nav__menu__menuDesktop__article__anchor"
-              >BENEFITS</a
-            >
-          </li>
-          <li class="nav__menu__menuDesktop__article">
-            <a
-              href="#pricingTitle"
-              onclick="toggleMenu()"
-              class="nav__menu__menuDesktop__article__anchor"
-              >PRICES</a
-            >
-          </li>
-          <li class="nav__menu__menuDesktop__article">
-            <a
-              href="#questions"
-              onclick="toggleMenu()"
-              class="nav__menu__menuDesktop__article__anchor"
-              >CONTACT</a
-            >
-          </li>
-        </ul>
-      </section>
-      <img id="svgMenu" src="./svg/Menu.svg" class="nav__svg" alt="Menu" />
-    </nav>
-    <main class="main">
-      <article class="main__opening">
-        <h1 class="main__opening__title">Sell More!</h1>
-        <p class="main__opening__subtitle">
-          Open shop on our platform and increase your sales
-        </p>
-        <button class="main__opening__openButton">Open your shop</button>
-      </article>
-      <article id="main__background" class="main__background"></article>
-      <p id="textPopular" class="main__textPopular">
-        The most popular sales platform in country
+    <section class="nav__menu">
+      <ul id="menu" class="nav__menu__menuDesktop">
+        <li class="nav__menu__menuDesktop__article article--border">
+          <a href="#main__background" onclick="toggleMenu()" class="nav__menu__menuDesktop__article__anchor">WHY US</a>
+        </li>
+        <li class="nav__menu__menuDesktop__article">
+          <a href="#groups" onclick="toggleMenu()" class="nav__menu__menuDesktop__article__anchor">BENEFITS</a>
+        </li>
+        <li class="nav__menu__menuDesktop__article">
+          <a href="#pricingTitle" onclick="toggleMenu()" class="nav__menu__menuDesktop__article__anchor">PRICES</a>
+        </li>
+        <li class="nav__menu__menuDesktop__article">
+          <a href="#questions" onclick="toggleMenu()" class="nav__menu__menuDesktop__article__anchor">CONTACT</a>
+        </li>
+      </ul>
+    </section>
+    <img id="svgMenu" src="./svg/Menu.svg" class="nav__svg" alt="Menu" />
+  </nav>
+  <main class="main">
+    <article class="main__opening">
+      <h1 class="main__opening__title">Sell More!</h1>
+      <p class="main__opening__subtitle">
+        Open shop on our platform and increase your sales
       </p>
-      <section class="main__sectionPopular">
-        <article class="main__sectionPopular__article">
-          <div class="main__sectionPopular__article__popularSvg">
-            <img
-              src="./svg/elipsePink.svg"
-              class="main__sectionPopular__article__svgElipse"
-            />
-            <img
-              src="./svg/person.svg"
-              class="main__sectionPopular__article__popularSvg__svgIconPerson"
-            />
-          </div>
-          <p class="main__sectionPopular__article__pNumber">100000+</p>
-          <p class="main__sectionPopular__article__pDescription">
-            daily entries
-          </p>
-        </article>
-        <article class="main__sectionPopular__article">
-          <div class="main__sectionPopular__article__popularSvg">
-            <img
-              src="./svg/elipseBlue.svg"
-              class="main__sectionPopular__article__svgElipse"
-            />
-            <img
-              src="./svg/eye.svg"
-              class="main__sectionPopular__article__popularSvg__svgIconEye"
-            />
-          </div>
-          <p class="main__sectionPopular__article__pNumber">2000000+</p>
-          <p class="main__sectionPopular__article__pDescription">
-            seen products every day
-          </p>
-        </article>
-        <article class="main__sectionPopular__article">
-          <div class="main__sectionPopular__article__popularSvg">
-            <img
-              src="./svg/elipseGreen.svg"
-              class="main__sectionPopular__article__svgElipse"
-            />
-            <img
-              src="./svg/catalog.svg"
-              class="main__sectionPopular__article__popularSvg__svgIconCatalog"
-            />
-          </div>
-          <p class="main__sectionPopular__article__pNumber">10000+</p>
-          <p class="main__sectionPopular__article__pDescription">
-            added posts daily
-          </p>
-        </article>
-      </section>
-      <section id="groups" class="main__groups">
-        <article class="main__groups__group group--desktop">
-          <div class="main__groups__group__groupImg">
-            <img
-              src="./img/Rectangle 5.png"
-              class="main__groups__group__groupImg__rectangle"
-            />
-            <img
-              src="./img/Macbook2 2.png"
-              class="main__groups__group__groupImg__macbook2"
-            />
-          </div>
-          <div class="main__groups__group__groupText groupText--red">
-            <h1 class="main__groups__group__groupText__title">
-              Be always first
-            </h1>
-            <p class="main__groups__group__groupText__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-          </div>
-        </article>
-        <article class="main__groups__group">
-          <div class="main__groups__group__groupImg">
-            <img
-              src="./img/Ellipse 3.png"
-              class="main__groups__group__groupImg__ellipse3"
-            />
-            <img
-              src="./img/iPhone2 2.png"
-              class="main__groups__group__groupImg__iPhone2"
-            />
-          </div>
-          <div class="main__groups__group__groupText groupText--blue">
-            <h1 class="main__groups__group__groupText__title">
-              Your shop is where you are!
-            </h1>
-            <p class="main__groups__group__groupText__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-          </div>
-        </article>
-        <article class="main__groups__groupTrumpet">
-          <div class="main__groups__groupTrumpet__divTextTrumpet">
-            <h1 class="main__groups__groupTrumpet__divTextTrumpet__title">
-              Increase recognition your brand!
-            </h1>
-            <p class="main__groups__groupTrumpet__divTextTrumpet__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-          </div>
-          <div class="main__groups__groupTrumpet__divImgTrumpet">
-            <img
-              src="./img/Trumpet 2.png"
-              alt="Trumpet"
-              class="main__groups__groupTrumpet__divImgTrumpet__imgTrumpet"
-            />
-          </div>
-        </article>
-      </section>
-      <h1 id="pricingTitle" class="main__pricingTitle">Pricing</h1>
-      <div class="main__container">
-        <section class="main__container__pricing">
-          <article class="main__container__pricing__card">
-            <div class="main__container__pricing__card__info info--borderRed">
-              <div class="main__container__pricing__card__info__leftInfo">
-                <h1
-                  class="main__container__pricing__card__info__leftInfo__h1Modality"
-                >
-                  Basic
-                </h1>
-                <p
-                  class="main__container__pricing__card__info__leftInfo__pModality"
-                >
-                  $0
-                </p>
-                <h6
-                  class="main__container__pricing__card__info__leftInfo__h4Modality h4Modality--red"
-                >
-                  Limited offer
-                </h6>
-              </div>
-              <div class="main__container__pricing__card__info__rightInfo">
-                <ul
-                  class="main__container__pricing__card__info__rightInfo__checkboxList"
-                >
-                  <p>
-                    <img src="./svg/checkGreen.svg" class="checkGreen" />
-                    100 MB HDD
-                  </p>
-                  <p>
-                    <img src="./svg/checkGreen.svg" class="checkGreen" />
-                    1 Subdomain
-                  </p>
-                  <p>
-                    <img src="./svg/checkGreen.svg" class="checkGreen" />
-                    2 E-mails
-                  </p>
-                  <p>
-                    <img src="./svg/checkRed.svg" class="checkRed" />
-                    Two years license
-                  </p>
-                  <p>
-                    <img src="./svg/checkRed.svg" class="checkRed" />
-                    Full support
-                  </p>
-                </ul>
-              </div>
-              <button
-                class="main__container__pricing__card__basicButton basicButton--red"
-              >
-                Begin
-              </button>
-            </div>
-          </article>
-        </section>
-        <section class="main__container__pricing">
-          <article class="main__container__pricing__card">
-            <div class="main__container__pricing__card__info info--borderblue">
-              <div class="main__container__pricing__card__info__leftInfo">
-                <h1
-                  class="main__container__pricing__card__info__leftInfo__h1Modality"
-                >
-                  Profesional
-                </h1>
-                <p
-                  class="main__container__pricing__card__info__leftInfo__pModality pModality--blue"
-                >
-                  $25
-                </p>
-                <h6
-                  class="main__container__pricing__card__info__leftInfo__h4Modality"
-                >
-                  Limited offer
-                </h6>
-              </div>
-              <div class="main__container__pricing__card__info__rightInfo">
-                <ul
-                  class="main__container__pricing__card__info__rightInfo__checkboxList"
-                >
-                  <p>
-                    <img src="./svg/checkGreen.svg" class="checkGreen" />
-                    500 MB HDD
-                  </p>
-                  <p>
-                    <img src="./svg/checkGreen.svg" class="checkGreen" />
-                    2 Subdomain
-                  </p>
-                  <p>
-                    <img src="./svg/checkGreen.svg" class="checkGreen" />
-                    5 E-mails
-                  </p>
-                  <p>
-                    <img src="./svg/checkGreen.svg" class="checkGreen" />
-                    one years license
-                  </p>
-                  <p>
-                    <img src="./svg/checkRed.svg" class="checkRed" />
-                    Full support
-                  </p>
-                </ul>
-              </div>
-              <button
-                class="main__container__pricing__card__basicButton basicButton--blue"
-              >
-                Begin
-              </button>
-            </div>
-          </article>
-        </section>
-        <section class="main__container__pricing">
-          <article class="main__container__pricing__card">
-            <div class="main__container__pricing__card__info info--borderGreen">
-              <div class="main__container__pricing__card__info__leftInfo">
-                <h1
-                  class="main__container__pricing__card__info__leftInfo__h1Modality"
-                >
-                  Premiun
-                </h1>
-                <p
-                  class="main__container__pricing__card__info__leftInfo__pModality pModality--green"
-                >
-                  $60
-                </p>
-                <h6
-                  class="main__container__pricing__card__info__leftInfo__h4Modality"
-                >
-                  Limited offer
-                </h6>
-              </div>
-              <div class="main__container__pricing__card__info__rightInfo">
-                <ul
-                  class="main__container__pricing__card__info__rightInfo__checkboxList"
-                >
-                  <p>
-                    <img src="./svg/checkGreen.svg" class="checkGreen" />
-                    2 GB HDD
-                  </p>
-                  <p>
-                    <img src="./svg/checkGreen.svg" class="checkGreen" />
-                    5 Subdomain
-                  </p>
-                  <p>
-                    <img src="./svg/checkGreen.svg" class="checkGreen" />
-                    20 E-mails
-                  </p>
-                  <p>
-                    <img src="./svg/checkGreen.svg" class="checkRed" />
-                    Two years license
-                  </p>
-                  <p>
-                    <img src="./svg/checkGreen.svg" class="checkRed" />
-                    Full support
-                  </p>
-                </ul>
-              </div>
-              <button
-                class="main__container__pricing__card__basicButton basicButton--green"
-              >
-                Begin
-              </button>
-            </div>
-          </article>
-        </section>
-      </div>
-      <section id="questions" class="main__questions">
-        <div class="main__questions__container">
-          <h1 class="main__questions__container__questionsTitle">
-            Any questions?
-          </h1>
-          <p class="main__questions__container__subtitle">
-            Leave your email address or call us!
-          </p>
-          <div class="main__questions__container__contact">
-            <article class="main__questions__container__contact__mail">
-              <img
-                src="./svg/mail.svg"
-                class="main__questions__container__contact__mail__svgMail"
-              />
-              <p class="main__questions__container__contact__mail__textMail">
-                info@bestshop.xyz
-              </p>
-            </article>
-            <article class="main__questions__container__contact__phone">
-              <img
-                src="./svg/Phone.svg"
-                class="main__questions__container__contact__phone__svgPhone"
-              />
-              <p
-                class="main__questions__container__contact__phone__numberPhone"
-              >
-                123 456 789
-              </p>
-            </article>
-          </div>
+      <button class="main__opening__openButton">Open your shop</button>
+    </article>
+    <article id="main__background" class="main__background"></article>
+    <p id="textPopular" class="main__textPopular">
+      The most popular sales platform in country
+    </p>
+    <section class="main__sectionPopular">
+      <article class="main__sectionPopular__article">
+        <div class="main__sectionPopular__article__popularSvg">
+          <img src="./svg/elipsePink.svg" class="main__sectionPopular__article__svgElipse" />
+          <img src="./svg/person.svg" class="main__sectionPopular__article__popularSvg__svgIconPerson" />
         </div>
-        <div class="main__questions__containerForm">
-          <article class="main__questions__containerForm__form">
-            <p class="main__questions__containerForm__form__formP">NAME</p>
-            <input
-              type="text"
-              class="main__questions__containerForm__form__inputForm"
-            />
-            <p class="main__questions__containerForm__form__formP">EMAIL</p>
-            <input
-              type="email"
-              class="main__questions__containerForm__form__inputForm"
-            />
-          </article>
-          <article class="main__questions__containerForm__check">
-            <input
-              type="checkbox"
-              class="main__questions__containerForm__check__checkboxCheck"
-            />
-            <p class="main__questions__containerForm__check__pCheck">
-              I hereby give consent for my personal data included in my
-              application to be processed for the purposes of the recruitment
-              process under the European Parliament’s and Council of the
-              European Union Regulation on the Protection of Natural Persons as
-              of 27 April 2016, with regard to the processing of personal data
-              and on the free movement of such data, and repealing Directive
-              95/46/EC (Data Protection Directive)
-            </p>
-            <article class="main__questions__containerForm__check__sendForm">
-              <button
-                class="main__questions__containerForm__check__sendForm__sendFormButton"
-              >
-                Send
-              </button>
-            </article>
-          </article>
-        </div>
-      </section>
-      <section class="main__returnToTop">
-        <a onclick="handleClick()" class="main__returnToTop__anchor">
-          <img src="./svg/return.svg"></img>
-        </a>
-      </section>
-    </main>
-    <footer class="footer">
-      <section class="footer__rights">
-        <p class="footer__rights__logo">OXYGENShop</p>
-        <p class="footer__rights__reserved">
-          © 2022 OXYGEN, All Rights Reserved
+        <p class="main__sectionPopular__article__pNumber">100000+</p>
+        <p class="main__sectionPopular__article__pDescription">
+          daily entries
         </p>
+      </article>
+      <article class="main__sectionPopular__article">
+        <div class="main__sectionPopular__article__popularSvg">
+          <img src="./svg/elipseBlue.svg" class="main__sectionPopular__article__svgElipse" />
+          <img src="./svg/eye.svg" class="main__sectionPopular__article__popularSvg__svgIconEye" />
+        </div>
+        <p class="main__sectionPopular__article__pNumber">2000000+</p>
+        <p class="main__sectionPopular__article__pDescription">
+          seen products every day
+        </p>
+      </article>
+      <article class="main__sectionPopular__article">
+        <div class="main__sectionPopular__article__popularSvg">
+          <img src="./svg/elipseGreen.svg" class="main__sectionPopular__article__svgElipse" />
+          <img src="./svg/catalog.svg" class="main__sectionPopular__article__popularSvg__svgIconCatalog" />
+        </div>
+        <p class="main__sectionPopular__article__pNumber">10000+</p>
+        <p class="main__sectionPopular__article__pDescription">
+          added posts daily
+        </p>
+      </article>
+    </section>
+    <section id="groups" class="main__groups">
+      <article class="main__groups__group group--desktop">
+        <div class="main__groups__group__groupImg">
+          <img src="./img/Rectangle 5.png" class="main__groups__group__groupImg__rectangle" />
+          <img src="./img/Macbook2 2.png" class="main__groups__group__groupImg__macbook2" />
+        </div>
+        <div class="main__groups__group__groupText groupText--red">
+          <h1 class="main__groups__group__groupText__title">
+            Be always first
+          </h1>
+          <p class="main__groups__group__groupText__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam.
+          </p>
+        </div>
+      </article>
+      <article class="main__groups__group">
+        <div class="main__groups__group__groupImg">
+          <img src="./img/Ellipse 3.png" class="main__groups__group__groupImg__ellipse3" />
+          <img src="./img/iPhone2 2.png" class="main__groups__group__groupImg__iPhone2" />
+        </div>
+        <div class="main__groups__group__groupText groupText--blue">
+          <h1 class="main__groups__group__groupText__title">
+            Your shop is where you are!
+          </h1>
+          <p class="main__groups__group__groupText__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam.
+          </p>
+        </div>
+      </article>
+      <article class="main__groups__groupTrumpet">
+        <div class="main__groups__groupTrumpet__divTextTrumpet">
+          <h1 class="main__groups__groupTrumpet__divTextTrumpet__title">
+            Increase recognition your brand!
+          </h1>
+          <p class="main__groups__groupTrumpet__divTextTrumpet__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam.
+          </p>
+        </div>
+        <div class="main__groups__groupTrumpet__divImgTrumpet">
+          <img src="./img/Trumpet 2.png" alt="Trumpet" class="main__groups__groupTrumpet__divImgTrumpet__imgTrumpet" />
+        </div>
+      </article>
+    </section>
+    <h1 id="pricingTitle" class="main__pricingTitle">Pricing</h1>
+    <div class="main__container">
+      <section class="main__container__pricing">
+        <article class="main__container__pricing__card">
+          <div class="main__container__pricing__card__info info--borderRed">
+            <div class="main__container__pricing__card__info__leftInfo">
+              <h1 class="main__container__pricing__card__info__leftInfo__h1Modality">
+                Basic
+              </h1>
+              <p class="main__container__pricing__card__info__leftInfo__pModality">
+                $0
+              </p>
+              <h6 class="main__container__pricing__card__info__leftInfo__h4Modality h4Modality--red">
+                Limited offer
+              </h6>
+            </div>
+            <div class="main__container__pricing__card__info__rightInfo">
+              <ul class="main__container__pricing__card__info__rightInfo__checkboxList">
+                <p>
+                  <img src="./svg/checkGreen.svg" class="checkGreen" />
+                  100 MB HDD
+                </p>
+                <p>
+                  <img src="./svg/checkGreen.svg" class="checkGreen" />
+                  1 Subdomain
+                </p>
+                <p>
+                  <img src="./svg/checkGreen.svg" class="checkGreen" />
+                  2 E-mails
+                </p>
+                <p>
+                  <img src="./svg/checkRed.svg" class="checkRed" />
+                  Two years license
+                </p>
+                <p>
+                  <img src="./svg/checkRed.svg" class="checkRed" />
+                  Full support
+                </p>
+              </ul>
+            </div>
+            <button class="main__container__pricing__card__basicButton basicButton--red">
+              Begin
+            </button>
+          </div>
+        </article>
       </section>
-      <section class="footer__rrss">
-        <img src="./svg/Twitter (2) 2.svg" class="footer__rrss__svgTwitter" />
-        <img src="./svg/Facebook (3) 2.svg" class="footer__rrss__svgFacebook" />
+      <section class="main__container__pricing">
+        <article class="main__container__pricing__card">
+          <div class="main__container__pricing__card__info info--borderblue">
+            <div class="main__container__pricing__card__info__leftInfo">
+              <h1 class="main__container__pricing__card__info__leftInfo__h1Modality">
+                Profesional
+              </h1>
+              <p class="main__container__pricing__card__info__leftInfo__pModality pModality--blue">
+                $25
+              </p>
+              <h6 class="main__container__pricing__card__info__leftInfo__h4Modality">
+                Limited offer
+              </h6>
+            </div>
+            <div class="main__container__pricing__card__info__rightInfo">
+              <ul class="main__container__pricing__card__info__rightInfo__checkboxList">
+                <p>
+                  <img src="./svg/checkGreen.svg" class="checkGreen" />
+                  500 MB HDD
+                </p>
+                <p>
+                  <img src="./svg/checkGreen.svg" class="checkGreen" />
+                  2 Subdomain
+                </p>
+                <p>
+                  <img src="./svg/checkGreen.svg" class="checkGreen" />
+                  5 E-mails
+                </p>
+                <p>
+                  <img src="./svg/checkGreen.svg" class="checkGreen" />
+                  one years license
+                </p>
+                <p>
+                  <img src="./svg/checkRed.svg" class="checkRed" />
+                  Full support
+                </p>
+              </ul>
+            </div>
+            <button class="main__container__pricing__card__basicButton basicButton--blue">
+              Begin
+            </button>
+          </div>
+        </article>
       </section>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
+      <section class="main__container__pricing">
+        <article class="main__container__pricing__card">
+          <div class="main__container__pricing__card__info info--borderGreen">
+            <div class="main__container__pricing__card__info__leftInfo">
+              <h1 class="main__container__pricing__card__info__leftInfo__h1Modality">
+                Premiun
+              </h1>
+              <p class="main__container__pricing__card__info__leftInfo__pModality pModality--green">
+                $60
+              </p>
+              <h6 class="main__container__pricing__card__info__leftInfo__h4Modality">
+                Limited offer
+              </h6>
+            </div>
+            <div class="main__container__pricing__card__info__rightInfo">
+              <ul class="main__container__pricing__card__info__rightInfo__checkboxList">
+                <p>
+                  <img src="./svg/checkGreen.svg" class="checkGreen" />
+                  2 GB HDD
+                </p>
+                <p>
+                  <img src="./svg/checkGreen.svg" class="checkGreen" />
+                  5 Subdomain
+                </p>
+                <p>
+                  <img src="./svg/checkGreen.svg" class="checkGreen" />
+                  20 E-mails
+                </p>
+                <p>
+                  <img src="./svg/checkGreen.svg" class="checkRed" />
+                  Two years license
+                </p>
+                <p>
+                  <img src="./svg/checkGreen.svg" class="checkRed" />
+                  Full support
+                </p>
+              </ul>
+            </div>
+            <button class="main__container__pricing__card__basicButton basicButton--green">
+              Begin
+            </button>
+          </div>
+        </article>
+      </section>
+    </div>
+    <section id="questions" class="main__questions">
+      <div class="main__questions__container">
+        <h1 class="main__questions__container__questionsTitle">
+          Any questions?
+        </h1>
+        <p class="main__questions__container__subtitle">
+          Leave your email address or call us!
+        </p>
+        <div class="main__questions__container__contact">
+          <article class="main__questions__container__contact__mail">
+            <img src="./svg/mail.svg" class="main__questions__container__contact__mail__svgMail" />
+            <p class="main__questions__container__contact__mail__textMail">
+              info@bestshop.xyz
+            </p>
+          </article>
+          <article class="main__questions__container__contact__phone">
+            <img src="./svg/Phone.svg" class="main__questions__container__contact__phone__svgPhone" />
+            <p class="main__questions__container__contact__phone__numberPhone">
+              123 456 789
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="main__questions__containerForm">
+        <article class="main__questions__containerForm__form">
+          <p class="main__questions__containerForm__form__formP">NAME</p>
+          <input id="inputName" type="text" class="main__questions__containerForm__form__inputForm" autocomplete="off"/>
+          <p class="main__questions__containerForm__form__formP">EMAIL</p>
+          <input id="inputMail" type="email" class="main__questions__containerForm__form__inputForm" autocomplete="off"/>
+        </article>
+        <article class="main__questions__containerForm__check">
+          <input id="checkbox" type="checkbox" class="main__questions__containerForm__check__checkboxCheck" />
+          <p class="main__questions__containerForm__check__pCheck">
+            I hereby give consent for my personal data included in my
+            application to be processed for the purposes of the recruitment
+            process under the European Parliament’s and Council of the
+            European Union Regulation on the Protection of Natural Persons as
+            of 27 April 2016, with regard to the processing of personal data
+            and on the free movement of such data, and repealing Directive
+            95/46/EC (Data Protection Directive)
+          </p>
+          <article class="main__questions__containerForm__check__sendForm">
+            <button id="send" onclick="sendForm()" class="main__questions__containerForm__check__sendForm__sendFormButton">
+              Send
+            </button>
+          </article>
+        </article>
+      </div>
+    </section>
+    <section class="main__returnToTop">
+      <a onclick="handleClick()" class="main__returnToTop__anchor">
+        <img src="./svg/return.svg"></img>
+      </a>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="footer__rights">
+      <p class="footer__rights__logo">OXYGENShop</p>
+      <p class="footer__rights__reserved">
+        © 2022 OXYGEN, All Rights Reserved
+      </p>
+    </section>
+    <section class="footer__rrss">
+      <img src="./svg/Twitter (2) 2.svg" class="footer__rrss__svgTwitter" />
+      <img src="./svg/Facebook (3) 2.svg" class="footer__rrss__svgFacebook" />
+    </section>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>

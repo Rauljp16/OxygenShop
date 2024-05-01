@@ -54,3 +54,37 @@ const delay = () => {
     top: 0,
   });
 };
+
+//validate form
+
+const inputName = document.querySelector("#inputName")
+const inputMail = document.querySelector("#inputMail")
+const send = document.querySelector("#send")
+const regexMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+const sendForm = () => {
+  console.log(`nombre: ${inputName.value} mail:${inputMail.value}`)
+  if (regexMail.test(inputMail.value)) {
+    alert("¡El correo electrónico es válido!");
+  } else {
+    alert("¡El correo electrónico no es válido!");
+  }
+  if (inputName.value.length >= 2 && inputName.value.length <= 100) {
+    alert("La longitud  válida.");
+  } else {
+    alert("El contenido debe tener entre 2 y 100 caracteres.");
+  }
+}
+
+
+const checkbox = document.querySelector("#checkbox");
+
+checkbox.addEventListener('click', function () {
+  checkbox.classList.toggle("checkboxCheckImg")
+  if (checkbox.checked) {
+    console.log('El checkbox está marcado.');
+  } else {
+    console.log('El checkbox no está marcado.');
+  }
+
+});

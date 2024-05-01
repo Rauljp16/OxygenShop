@@ -413,8 +413,12 @@
           appearance: none;
           width: 1.5rem;
           height: 1.5rem;
-          border: 1px solid #95989a;
+          border: 1px solid #9a9595;
           border-radius: 4px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .checkboxCheckImg {
           background-image: url(./svg/Vector.svg);
           background-repeat: no-repeat;
           background-position: center;
