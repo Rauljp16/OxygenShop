@@ -33,7 +33,7 @@ window.addEventListener("load", () => {
       (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
       100;
     percentage.style.width = `${scrollPercentage}%`;
-    if (scrollPercentage > 25) {
+    if (scrollPercentage > 50) {
       returnToTop.style.visibility = "visible";
     } else {
       returnToTop.style.visibility = "hidden";
@@ -46,7 +46,7 @@ window.addEventListener("load", () => {
 //button to top
 
 function handleClick() {
-  setTimeout(delay, 2000);
+  setTimeout(delay, 200);
 }
 
 const delay = () => {
