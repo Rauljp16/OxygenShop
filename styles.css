@@ -452,6 +452,9 @@
   border-bottom: 1px solid #9a9595;
   width: 100%;
 }
+.main__questions__containerForm__form .error {
+  border-bottom: 2px solid red;
+}
 .main__questions__containerForm__check {
   margin: 2rem 0;
 }
@@ -466,6 +469,9 @@
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
+}
+.main__questions__containerForm__check .error {
+  border: 2px solid red;
 }
 .main__questions__containerForm__check .checkboxCheckImg {
   background-image: url(./svg/Vector.svg);

@@ -293,7 +293,7 @@
           </article>
         </div>
       </div>
-      <div class="main__questions__containerForm">
+      <form id="sendForm" class="main__questions__containerForm">
         <article class="main__questions__containerForm__form">
           <p class="main__questions__containerForm__form__formP">NAME</p>
           <input id="inputName" type="text" class="main__questions__containerForm__form__inputForm" autocomplete="off"/>
@@ -312,17 +312,20 @@
             95/46/EC (Data Protection Directive)
           </p>
           <article class="main__questions__containerForm__check__sendForm">
-            <button id="send" onclick="sendForm()" class="main__questions__containerForm__check__sendForm__sendFormButton">
+            <button  type="submit" class="main__questions__containerForm__check__sendForm__sendFormButton">
               Send
             </button>
           </article>
         </article>
-      </div>
+      </form>
     </section>
     <section class="main__returnToTop">
       <a onclick="handleClick()" class="main__returnToTop__anchor">
         <img src="./svg/return.svg"></img>
       </a>
+    </section>
+    <section class="main__popup">
+      <article class="main__popup__newsletter"></article>
     </section>
   </main>
   <footer class="footer">

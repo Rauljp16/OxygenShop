@@ -403,6 +403,11 @@
           border-bottom: 1px solid #9a9595;
           width: 100%;
         }
+
+        .error {
+          border-bottom: 2px solid red;
+        }
+
       }
 
       &__check {
@@ -418,6 +423,11 @@
           background-repeat: no-repeat;
           background-position: center;
         }
+
+        .error {
+          border: 2px solid red;
+        }
+
         .checkboxCheckImg {
           background-image: url(./svg/Vector.svg);
           background-repeat: no-repeat;
