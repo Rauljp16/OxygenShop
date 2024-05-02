@@ -132,3 +132,73 @@ sendForm.addEventListener("submit", function (event) {
 });
 
 //popup / modal
+
+const popup = document.querySelector("#popup");
+const inputNewsletter = document.querySelector("#inputNewsletter");
+const formNewsletter = document.querySelector("#formNewsletter");
+let formNewsletterValid = false;
+
+window.addEventListener("load", () => {
+  sessionStorage.popupStorage = "false";
+  if (sessionStorage.popupStorage === "false") {
+    setTimeout((load) => {
+      popup.style.display = "block";
+    }, 5000);
+
+    const update = () => {
+      scrollPercentage =
+        (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
+        100;
+      if (sessionStorage.popupStorage === "false" && scrollPercentage > 25) {
+        popup.style.display = "block";
+      }
+    };
+    update();
+    window.addEventListener("scroll", update);
+  }
+});
+
+const closePopup = () => {
+  popup.style.display = "none";
+  sessionStorage.popupStorage = "true";
+};
+
+document.addEventListener("click", (event) => {
+  if (!popup.contains(event.target)) {
+    closePopup();
+  }
+});
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closePopup();
+  }
+});
+
+const validationsNewsletter = () => {
+  if (regexMail.test(inputNewsletter.value)) {
+    formNewsletterValid = true;
+  } else {
+    alert("Email no valido");
+  }
+};
+
+formNewsletter.addEventListener("submit", function (event) {
+  event.preventDefault();
+  validationsNewsletter();
+  if (formNewsletterValid === true) {
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      body: JSON.stringify({
+        email: inputNewsletter.value,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
+      .then((response) => response.json())
+      .then((json) => console.log(json));
+    inputNewsletter.value = "";
+    formNewsletterValid = false;
+    closePopup();
+  }
+});
