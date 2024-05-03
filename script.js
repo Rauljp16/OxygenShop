@@ -202,3 +202,66 @@ formNewsletter.addEventListener("submit", function (event) {
     closePopup();
   }
 });
+
+//selector de moneda
+
+let dataApiSelector;
+let basicEur;
+let profesionalEur;
+let premiunEur;
+let eur;
+let usd;
+let gbp;
+
+const fetchData = async () => {
+  const response = await fetch(
+    "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json"
+  );
+  const data = await response.json();
+  dataApiSelector = data.eur;
+};
+
+fetchData().then(() => {
+  eur = dataApiSelector.eur;
+  usd = dataApiSelector.usd;
+  gbp = dataApiSelector.gbp;
+  basicEur = 0 / usd;
+  profesionalEur = 25 / usd;
+  premiunEur = 60 / usd;
+});
+
+const clickEur = () => {
+  document.getElementById("priceBasic").textContent = `€ ${Math.round(
+    basicEur
+  )}`;
+  document.getElementById("priceProfesional").textContent = `€ ${Math.round(
+    profesionalEur
+  )}`;
+  document.getElementById("pricePremiun").textContent = `€ ${Math.round(
+    premiunEur
+  )}`;
+};
+
+const clickUsd = () => {
+  document.getElementById("priceBasic").textContent = `$ ${Math.round(
+    basicEur * usd
+  )}`;
+  document.getElementById("priceProfesional").textContent = `$ ${Math.round(
+    profesionalEur * usd
+  )}`;
+  document.getElementById("pricePremiun").textContent = `$ ${Math.round(
+    premiunEur * usd
+  )}`;
+};
+
+const clickGbp = () => {
+  document.getElementById("priceBasic").textContent = `£ ${Math.round(
+    basicEur * gbp
+  )}`;
+  document.getElementById("priceProfesional").textContent = `£ ${Math.round(
+    profesionalEur * gbp
+  )}`;
+  document.getElementById("pricePremiun").textContent = `£ ${Math.round(
+    premiunEur * gbp
+  )}`;
+};

@@ -136,6 +136,11 @@
       </article>
     </section>
     <h1 id="pricingTitle" class="main__pricingTitle">Pricing</h1>
+    <article class="main__selector">
+      <img onclick="clickEur()" class="main__selector__boton" src="./svg/eur.svg" alt="boton EUR">
+      <img onclick="clickUsd()" class="main__selector__boton" src="./svg/usd.svg" alt="boton USD">
+      <img onclick="clickGbp()" class="main__selector__boton" src="./svg/gbp.svg" alt="boton GBP">
+    </article>
     <div class="main__container">
       <section class="main__container__pricing">
         <article class="main__container__pricing__card">
@@ -144,7 +149,7 @@
               <h1 class="main__container__pricing__card__info__leftInfo__h1Modality">
                 Basic
               </h1>
-              <p class="main__container__pricing__card__info__leftInfo__pModality">
+              <p id="priceBasic" class="main__container__pricing__card__info__leftInfo__pModality">
                 $0
               </p>
               <h6 class="main__container__pricing__card__info__leftInfo__h4Modality h4Modality--red">
@@ -188,7 +193,7 @@
               <h1 class="main__container__pricing__card__info__leftInfo__h1Modality">
                 Profesional
               </h1>
-              <p class="main__container__pricing__card__info__leftInfo__pModality pModality--blue">
+              <p id="priceProfesional" class="main__container__pricing__card__info__leftInfo__pModality pModality--blue">
                 $25
               </p>
               <h6 class="main__container__pricing__card__info__leftInfo__h4Modality">
@@ -232,7 +237,7 @@
               <h1 class="main__container__pricing__card__info__leftInfo__h1Modality">
                 Premiun
               </h1>
-              <p class="main__container__pricing__card__info__leftInfo__pModality pModality--green">
+              <p id="pricePremiun" class="main__container__pricing__card__info__leftInfo__pModality pModality--green">
                 $60
               </p>
               <h6 class="main__container__pricing__card__info__leftInfo__h4Modality">
@@ -296,9 +301,11 @@
       <form id="sendForm" class="main__questions__containerForm">
         <article class="main__questions__containerForm__form">
           <p class="main__questions__containerForm__form__formP">NAME</p>
-          <input id="inputName" type="text" class="main__questions__containerForm__form__inputForm" autocomplete="off"/>
+          <input id="inputName" type="text" class="main__questions__containerForm__form__inputForm"
+            autocomplete="off" />
           <p class="main__questions__containerForm__form__formP">EMAIL</p>
-          <input id="inputMail" type="email" class="main__questions__containerForm__form__inputForm" autocomplete="off"/>
+          <input id="inputMail" type="email" class="main__questions__containerForm__form__inputForm"
+            autocomplete="off" />
         </article>
         <article class="main__questions__containerForm__check">
           <input id="checkbox" type="checkbox" class="main__questions__containerForm__check__checkboxCheck" />
@@ -312,7 +319,7 @@
             95/46/EC (Data Protection Directive)
           </p>
           <article class="main__questions__containerForm__check__sendForm">
-            <button  type="submit" class="main__questions__containerForm__check__sendForm__sendFormButton">
+            <button type="submit" class="main__questions__containerForm__check__sendForm__sendFormButton">
               Send
             </button>
           </article>
@@ -324,16 +331,14 @@
         <img src="./svg/return.svg"></img>
       </a>
     </section>
-
-
-
     <section id="popup" class="main__popup">
       <button onclick="closePopup()" class="main__popup__close">X</button>
       <img src="./img/newsletter.webp" class="main__popup__img" />
       <form id="formNewsletter" class="main__popup__newsletter">
         <p class="main__popup__newsletter__title">Subscribe to our newsletter</p>
-        <input id="inputNewsletter" type="email" placeholder="Email" class="main__popup__newsletter__input" autocomplete="off"/>
-        <button type="submit"  class="main__popup__newsletter__button">SUSCRIBE</button>
+        <input id="inputNewsletter" type="email" placeholder="Email" class="main__popup__newsletter__input"
+          autocomplete="off" />
+        <button type="submit" class="main__popup__newsletter__button">SUSCRIBE</button>
       </form>
     </section>
   </main>

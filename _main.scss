@@ -203,7 +203,7 @@
       }
 
       &__divImgTrumpet {
-        background-color: #55dfb4;
+        background-color: #55df9f;
         overflow: hidden;
         max-height: 12.18rem;
         border: 1px solid #e8e9ed;
@@ -222,6 +222,18 @@
     font-size: 2.25rem;
     line-height: 42.26px;
     margin: 3rem auto 0;
+  }
+
+  &__selector {
+    padding: 1em;
+
+    &__boton {
+      margin: 1em;
+    }
+
+    &__boton {
+      margin: 1em;
+    }
   }
 
   &__container {
@@ -596,6 +608,17 @@
     &__pricingTitle {
       margin: 3em 0 1.3em;
     }
+
+    &__selector {
+
+      &__boton:hover {
+        scale: 1.6;
+        border-radius: 10em;
+        box-shadow: 0rem 0rem 1.8rem #2d2e2dc7;
+        tra
+      }
+    }
+
 
     &__container {
       max-width: 79.1em;
