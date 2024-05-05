@@ -614,9 +614,9 @@
     margin: 3em 0 1.3em;
   }
   .main__selector__boton:hover {
-    scale: 1.8;
+    scale: 1.6;
     border-radius: 10em;
-    box-shadow: 0rem 0rem 2rem rgba(45, 46, 45, 0.7803921569);
+    box-shadow: 0rem 0rem 1.8rem rgba(45, 46, 45, 0.7803921569);
   }
   .main__container {
     max-width: 79.1em;
