@@ -276,12 +276,16 @@
       </section>
     </div>
     <section id="slider" class="main__slider">
-      <img src="./img/new york.jpg" class="main__slider__img" alt=""/>
-      <img src="./img/shanghai.jpg" class="main__slider__img" alt=""/>
-      <img src="./img/san francisco.jpg" class="main__slider__img" alt=""/>
-      <img src="./img/paris.jpg" class="main__slider__img" alt=""/>
-      <img src="./img/hong-kong.jpg" class="main__slider__img" alt=""/>
-
+      <img id="sliderImg" src="" class="main__slider__img" alt="slider"/>
+      <button id="buttonLeft"  class="main__slider__buttonLeft"><<</button>
+      <button id="buttonRight"  class="main__slider__buttonRight">>></button>
+      <article class="main__slider__paginations">
+        <span class="main__slider__paginations__span paginations--active"></span>
+        <span class="main__slider__paginations__span"></span>
+        <span class="main__slider__paginations__span"></span>
+        <span class="main__slider__paginations__span"></span>
+        <span class="main__slider__paginations__span"></span>
+      </article>
     </section>
     <section id="questions" class="main__questions">
       <div class="main__questions__container">
@@ -363,6 +367,7 @@
     </section>
   </footer>
   <script src="./script.js"></script>
+  <script src="./slider.js"></script>
 </body>
 
 </html>
