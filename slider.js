@@ -7,11 +7,11 @@ class slider {
     this.contador = 0;
     this.interval = null;
     this.imgArray = [
-      "./img/paris.jpg",
-      "./img/new york.jpg",
-      "./img/hong-kong.jpg",
-      "./img/san francisco.jpg",
-      "./img/shanghai.jpg",
+      "./img/paris.webp",
+      "./img/new york.webp",
+      "./img/hong-kong.webp",
+      "./img/san francisco.webp",
+      "./img/shanghai.webp",
     ];
   }
   windowListener() {

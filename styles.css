@@ -242,6 +242,7 @@
   position: relative;
   top: 1.2em;
   right: 1.2em;
+  width: 10em;
 }
 .main__groups__group__groupImg__ellipse3 {
   position: absolute;
@@ -373,8 +374,9 @@
   font-size: 1rem;
   line-height: 23px;
 }
-.main__container__pricing__card__info__rightInfo__checkboxList p {
+.main__container__pricing__card__info__rightInfo__checkboxList li {
   margin: 1.56em 0;
+  list-style: none;
 }
 .main__container__pricing__card .info--borderblue {
   border: 1px solid #08a6e4;
@@ -414,6 +416,7 @@
   width: 100%;
   height: 99%;
   border-radius: 1em;
+  aspect-ratio: 16/9;
 }
 .main__slider__buttonLeft {
   position: absolute;
@@ -457,6 +460,7 @@
 }
 .main__slider__paginations .paginations--active {
   background: #f7f7f7;
+  box-shadow: 0px 0px 10px rgb(240, 40, 40);
 }
 .main__questions {
   margin: 2em auto 1em;
@@ -732,6 +736,12 @@
   .main__slider__buttonRight {
     width: 3em;
     height: 3em;
+  }
+  .main__slider__buttonLeft:hover {
+    scale: 1.4;
+  }
+  .main__slider__buttonRight:hover {
+    scale: 1.4;
   }
   .main__slider__paginations {
     bottom: -0.5em;
