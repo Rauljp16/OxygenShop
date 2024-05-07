@@ -859,7 +859,9 @@
   border: none;
   cursor: pointer;
   font-weight: 600;
-  background-color: transparent;
+  background-color: rgba(206, 14, 14, 0.23);
+  width: 1.3em;
+  height: 1.3em;
 }
 .main__popup__img {
   width: 100%;
