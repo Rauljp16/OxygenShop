@@ -193,7 +193,8 @@
               <h1 class="main__container__pricing__card__info__leftInfo__h1Modality">
                 Profesional
               </h1>
-              <p id="priceProfesional" class="main__container__pricing__card__info__leftInfo__pModality pModality--blue">
+              <p id="priceProfesional"
+                class="main__container__pricing__card__info__leftInfo__pModality pModality--blue">
                 $25
               </p>
               <h6 class="main__container__pricing__card__info__leftInfo__h4Modality">
@@ -276,16 +277,17 @@
       </section>
     </div>
     <section id="slider" class="main__slider">
-      <img id="sliderImg" src="" class="main__slider__img" alt="slider"/>
-      <button id="buttonLeft"  class="main__slider__buttonLeft"><<</button>
-      <button id="buttonRight"  class="main__slider__buttonRight">>></button>
-      <article class="main__slider__paginations">
-        <span class="main__slider__paginations__span paginations--active"></span>
-        <span class="main__slider__paginations__span"></span>
-        <span class="main__slider__paginations__span"></span>
-        <span class="main__slider__paginations__span"></span>
-        <span class="main__slider__paginations__span"></span>
-      </article>
+      <img id="sliderImg" src="" class="main__slider__img" alt="slider" />
+      <button id="buttonLeft" class="main__slider__buttonLeft">
+        <<< /button>
+          <button id="buttonRight" class="main__slider__buttonRight">>></button>
+          <article class="main__slider__paginations">
+            <span class="main__slider__paginations__span paginations--active"></span>
+            <span class="main__slider__paginations__span"></span>
+            <span class="main__slider__paginations__span"></span>
+            <span class="main__slider__paginations__span"></span>
+            <span class="main__slider__paginations__span"></span>
+          </article>
     </section>
     <section id="questions" class="main__questions">
       <div class="main__questions__container">
@@ -299,13 +301,13 @@
           <article class="main__questions__container__contact__mail">
             <img src="./svg/mail.svg" class="main__questions__container__contact__mail__svgMail" />
             <p class="main__questions__container__contact__mail__textMail">
-              info@bestshop.xyz
+              rauljp16@gmail.com
             </p>
           </article>
           <article class="main__questions__container__contact__phone">
             <img src="./svg/Phone.svg" class="main__questions__container__contact__phone__svgPhone" />
             <p class="main__questions__container__contact__phone__numberPhone">
-              123 456 789
+              676 11 44 08
             </p>
           </article>
         </div>
@@ -313,11 +315,11 @@
       <form id="sendForm" class="main__questions__containerForm">
         <article class="main__questions__containerForm__form">
           <p class="main__questions__containerForm__form__formP">NAME</p>
-          <input id="inputName" type="text" class="main__questions__containerForm__form__inputForm"
-            autocomplete="off" />
+          <input id="inputName" placeholder="ej.Raúl" type="text"
+            class="main__questions__containerForm__form__inputForm" autocomplete="off" />
           <p class="main__questions__containerForm__form__formP">EMAIL</p>
-          <input id="inputMail" type="email" class="main__questions__containerForm__form__inputForm"
-            autocomplete="off" />
+          <input id="inputMail" placeholder="ej. rauljp16@gmail.com" type="email"
+            class="main__questions__containerForm__form__inputForm" autocomplete="off" />
         </article>
         <article class="main__questions__containerForm__check">
           <input id="checkbox" type="checkbox" class="main__questions__containerForm__check__checkboxCheck" />
@@ -345,10 +347,10 @@
     </section>
     <section id="popup" class="main__popup">
       <button onclick="closePopup()" class="main__popup__close">X</button>
-      <img src="./img/newsletter.webp" class="main__popup__img" alt="imagen newsletter"/>
+      <img src="./img/newsletter.webp" class="main__popup__img" alt="imagen newsletter" />
       <form id="formNewsletter" class="main__popup__newsletter">
         <p class="main__popup__newsletter__title">Subscribe to our newsletter</p>
-        <input id="inputNewsletter" type="email" placeholder="Email" class="main__popup__newsletter__input"
+        <input id="inputNewsletter" type="email" placeholder="rauljp16@gmail.com" class="main__popup__newsletter__input"
           autocomplete="off" />
         <button type="submit" class="main__popup__newsletter__button">SUSCRIBE</button>
       </form>
@@ -362,8 +364,12 @@
       </p>
     </section>
     <section class="footer__rrss">
-      <img src="./svg/Twitter (2) 2.svg" class="footer__rrss__svgTwitter" />
-      <img src="./svg/Facebook (3) 2.svg" class="footer__rrss__svgFacebook" />
+      <a href="https://www.linkedin.com/in/ra%C3%BAl-jerez-pag%C3%A1n-35570927a/" target="_blank">
+        <img src="./svg/linkedIn.svg" class="footer__rrss__svgTwitter" />
+      </a>
+      <a href="https://github.com/Rauljp16" target="_blank">
+      <img src="./svg/gitHub.svg" class="footer__rrss__svgFacebook" />
+    </a>
     </section>
   </footer>
   <script src="./script.js"></script>
