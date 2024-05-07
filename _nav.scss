@@ -1,0 +1,152 @@
+.percentage {
+  width: 100%;
+  height: 0.3em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+
+  &__scroller {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(253, 74, 74);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.29);
+    border-radius: 1em;
+  }
+}
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
+  padding: 1rem 0.3rem 0em;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+
+
+
+  &__logo {
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+
+    &__text {
+      color: #08a6e4;
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 2.313rem;
+
+    }
+  }
+
+  &__svg {
+    position: absolute;
+    right: 0em;
+    top: 0em;
+    margin: 2em 2em;
+    transition: transform 850ms;
+
+  }
+
+  &__menu {
+    width: 100%;
+    transform: translateY(0);
+
+
+    .menuDown {
+      position: relative;
+      display: block;
+      padding: 1em 1em 1.7em 1em;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 0.66em;
+      line-height: 0.93em;
+      letter-spacing: 0.22em;
+      color: #A5A5A5;
+
+
+    }
+
+    &__menuDesktop {
+      display: none;
+      list-style: none;
+
+
+      &__article {
+        padding: 1em;
+
+        &__anchor {
+          color: inherit;
+          text-decoration: none;
+        }
+
+      }
+
+
+    }
+
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+
+    &__logo {
+      padding-left: 2em;
+    }
+
+    &__svg {
+      display: none;
+    }
+
+    &__menu {
+      transform: translateY(-6px);
+      width: 40%;
+
+      .menuDown {
+        display: flex;
+
+      }
+
+      &__menuDesktop {
+        display: flex;
+        justify-content: space-evenly;
+        height: 100%;
+        margin-top: 0.3em;
+
+        &__article {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          font-size: 0.7em;
+          line-height: 1em;
+          letter-spacing: 0.2em;
+          padding: 0;
+
+
+          :focus {
+            padding-top: 1.5em;
+            height: 100%;
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+            border-bottom: 4px solid #08a6e4;
+          }
+        }
+
+      }
+
+
+    }
+
+  }
+
+}

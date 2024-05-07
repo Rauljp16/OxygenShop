@@ -1,56 +1,101 @@
-.header {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
-  padding: 1rem 0.3rem;
-  height: 4em;
+.percentage {
+  width: 100%;
+  height: 0.3em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
 }
-.header__logo {
+.percentage__scroller {
+  width: 0%;
+  height: 100%;
+  background-color: rgb(253, 74, 74);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.29);
+  border-radius: 1em;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
+  padding: 1rem 0.3rem 0em;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+}
+.nav__logo {
   display: inline-block;
   width: 45%;
   height: 100%;
   margin-left: 1em;
+  margin-bottom: 1em;
 }
-.header__logo__text {
+.nav__logo__text {
   color: #08a6e4;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 2rem;
   line-height: 2.313rem;
 }
-.header__menu {
-  display: inline-block;
-  text-align: right;
-  width: 45%;
-  height: 100%;
-  transform: translateY(-6px);
+.nav__svg {
+  position: absolute;
+  right: 0em;
+  top: 0em;
+  margin: 2em 2em;
+  transition: transform 850ms;
 }
-.header__menu__svg {
-  display: inline;
+.nav__menu {
+  width: 100%;
+  transform: translateY(0);
 }
-.header__menu__menuDesktop {
+.nav__menu .menuDown {
+  position: relative;
+  display: block;
+  padding: 1em 1em 1.7em 1em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.66em;
+  line-height: 0.93em;
+  letter-spacing: 0.22em;
+  color: #A5A5A5;
+}
+.nav__menu__menuDesktop {
   display: none;
+  list-style: none;
+}
+.nav__menu__menuDesktop__article {
+  padding: 1em;
+}
+.nav__menu__menuDesktop__article__anchor {
+  color: inherit;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 1000px) {
-  .header {
-    padding: 0;
+  .nav {
     display: flex;
     justify-content: center;
   }
-  .header__logo {
-    display: flex;
-    align-items: center;
+  .nav__logo {
     padding-left: 2em;
   }
-  .header__menu__svg {
+  .nav__svg {
     display: none;
   }
-  .header__menu__menuDesktop {
+  .nav__menu {
+    transform: translateY(-6px);
+    width: 40%;
+  }
+  .nav__menu .menuDown {
+    display: flex;
+  }
+  .nav__menu__menuDesktop {
     display: flex;
     justify-content: space-evenly;
     height: 100%;
     margin-top: 0.3em;
   }
-  .header__menu__menuDesktop__article {
+  .nav__menu__menuDesktop__article {
     display: flex;
     align-items: center;
     height: 100%;
@@ -59,12 +104,20 @@
     font-size: 0.7em;
     line-height: 1em;
     letter-spacing: 0.2em;
+    padding: 0;
   }
-  .header__menu__menuDesktop .article--border {
-    border-bottom: 4px solid #08a6e4;
+  .nav__menu__menuDesktop__article :focus {
+    padding-top: 1.5em;
+    height: 100%;
     font-weight: 700;
+    color: rgb(0, 0, 0);
+    border-bottom: 4px solid #08a6e4;
   }
 }
+* {
+  scroll-behavior: smooth;
+}
+
 .main {
   text-align: center;
 }
@@ -189,6 +242,7 @@
   position: relative;
   top: 1.2em;
   right: 1.2em;
+  width: 10em;
 }
 .main__groups__group__groupImg__ellipse3 {
   position: absolute;
@@ -240,7 +294,7 @@
   margin: 1.2rem 0;
 }
 .main__groups__groupTrumpet__divImgTrumpet {
-  background-color: #55dfb4;
+  background-color: #55df9f;
   overflow: hidden;
   max-height: 12.18rem;
   border: 1px solid #e8e9ed;
@@ -255,6 +309,15 @@
   font-size: 2.25rem;
   line-height: 42.26px;
   margin: 3rem auto 0;
+}
+.main__selector {
+  padding: 1em;
+}
+.main__selector__boton {
+  margin: 1em;
+}
+.main__selector__boton {
+  margin: 1em;
 }
 .main__container__pricing {
   padding-bottom: 1.56em;
@@ -311,8 +374,9 @@
   font-size: 1rem;
   line-height: 23px;
 }
-.main__container__pricing__card__info__rightInfo__checkboxList p {
+.main__container__pricing__card__info__rightInfo__checkboxList li {
   margin: 1.56em 0;
+  list-style: none;
 }
 .main__container__pricing__card .info--borderblue {
   border: 1px solid #08a6e4;
@@ -337,6 +401,66 @@
 }
 .main__container__pricing__card .basicButton--green {
   background-color: #55dfb4;
+}
+.main__slider {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.801);
+  width: 96%;
+  height: 20em;
+  margin: 2em auto 0 auto;
+  padding: 0.5em 0.5em 1.6em 0.5em;
+  border-radius: 1em;
+  max-width: 30rem;
+}
+.main__slider__img {
+  width: 100%;
+  height: 99%;
+  border-radius: 1em;
+  aspect-ratio: 16/9;
+}
+.main__slider__buttonLeft {
+  position: absolute;
+  bottom: 50%;
+  width: 2em;
+  height: 2em;
+  left: 4%;
+  border: 1px solid rgba(240, 40, 40, 0.4);
+  border-radius: 15em;
+  background-color: rgba(240, 40, 40, 0.3);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  box-shadow: 0px 0px 6px rgb(240, 40, 40);
+  cursor: pointer;
+}
+.main__slider__buttonRight {
+  position: absolute;
+  bottom: 50%;
+  width: 2em;
+  height: 2em;
+  right: 4%;
+  border: 1px solid rgba(240, 40, 40, 0.4);
+  border-radius: 15em;
+  background-color: rgba(240, 40, 40, 0.3);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  box-shadow: 0px 0px 6px rgb(240, 40, 40);
+  cursor: pointer;
+}
+.main__slider__paginations {
+  position: relative;
+  width: 100%;
+}
+.main__slider__paginations__span {
+  background: #888;
+  width: 1em;
+  height: 1em;
+  border-radius: 15em;
+  display: inline-block;
+  margin: 0 0.3em;
+}
+.main__slider__paginations .paginations--active {
+  background: #f7f7f7;
+  box-shadow: 0px 0px 10px rgb(240, 40, 40);
 }
 .main__questions {
   margin: 2em auto 1em;
@@ -392,12 +516,16 @@
   line-height: 0.87rem;
   letter-spacing: 0.28rem;
   color: #08a6e4;
-  margin: 2rem 0 1.8rem;
+  margin: 3rem 0 0;
 }
 .main__questions__containerForm__form__inputForm {
   border: none;
   border-bottom: 1px solid #9a9595;
   width: 100%;
+  height: 3em;
+}
+.main__questions__containerForm__form .error {
+  border-bottom: 2px solid red;
 }
 .main__questions__containerForm__check {
   margin: 2rem 0;
@@ -409,8 +537,15 @@
           appearance: none;
   width: 1.5rem;
   height: 1.5rem;
-  border: 1px solid #95989a;
+  border: 1px solid #9a9595;
   border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main__questions__containerForm__check .error {
+  border: 2px solid red;
+}
+.main__questions__containerForm__check .checkboxCheckImg {
   background-image: url(./svg/Vector.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -437,6 +572,25 @@
   padding: 1.4rem 6.3rem;
   color: #ffffff;
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.2901960784);
+}
+.main__returnToTop {
+  visibility: hidden;
+  position: fixed;
+  bottom: 3.5em;
+  right: 0.8em;
+  cursor: pointer;
+}
+.main__returnToTop__anchor img {
+  background-color: transparent;
+  border: none;
+  box-shadow: 2px 4px 9px #631b1b;
+  border-radius: 50%;
+  background-color: #c53939;
+  width: 2.5em;
+  height: 2.5em;
+}
+.main__returnToTop__anchor img:hover {
+  scale: 1.2;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -521,6 +675,11 @@
   .main__pricingTitle {
     margin: 3em 0 1.3em;
   }
+  .main__selector__boton:hover {
+    scale: 1.6;
+    border-radius: 10em;
+    box-shadow: 0rem 0rem 1.8rem rgba(45, 46, 45, 0.7803921569);
+  }
   .main__container {
     max-width: 79.1em;
     margin: auto;
@@ -564,6 +723,34 @@
   .main__container__pricing__card .basicButton--green:hover {
     box-shadow: 0.3rem 0.62rem 1.6rem rgba(85, 223, 179, 0.3490196078);
   }
+  .main__slider {
+    max-width: 78em;
+    margin: 2em auto;
+    height: 40em;
+    padding-bottom: 2.5em;
+  }
+  .main__slider__buttonLeft {
+    width: 3em;
+    height: 3em;
+  }
+  .main__slider__buttonRight {
+    width: 3em;
+    height: 3em;
+  }
+  .main__slider__buttonLeft:hover {
+    scale: 1.4;
+  }
+  .main__slider__buttonRight:hover {
+    scale: 1.4;
+  }
+  .main__slider__paginations {
+    bottom: -0.5em;
+  }
+  .main__slider__paginations__span {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 0.7em;
+  }
   .main__questions {
     display: flex;
     justify-content: space-between;
@@ -573,7 +760,7 @@
   }
   .main__questions__container__questionsTitle {
     font-size: 3em;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
   }
   .main__questions__container__contact {
     display: flex;
@@ -586,11 +773,11 @@
   .main__questions__containerForm {
     width: 50%;
   }
-  .main__questions__containerForm__form {
-    margin-bottom: 2em;
-  }
   .main__questions__containerForm__form__formP {
     margin-top: 0.5em;
+  }
+  .main__questions__containerForm__form__inputForm {
+    margin-bottom: 3em;
   }
   .main__questions__containerForm__check {
     margin: 0em;
@@ -600,6 +787,14 @@
   }
   .main__questions__containerForm__check__sendForm {
     margin-bottom: 0em;
+  }
+  .main__returnToTop {
+    bottom: 6.5em;
+    right: 0.8em;
+  }
+  .main__returnToTop__anchor img {
+    width: 3.5em;
+    height: 3.5em;
   }
 }
 .footer {
@@ -641,6 +836,81 @@
 @media only screen and (min-width: 1000px) {
   .footer {
     padding: 1.5em 8em;
+  }
+}
+.main__popup {
+  display: none;
+  position: fixed;
+  top: 18em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 0.5px solid rgba(45, 158, 224, 0.5);
+  border-radius: 2em;
+  max-width: 50em;
+  z-index: 50;
+  box-shadow: 18px 18px 10px rgb(22, 79, 112);
+}
+.main__popup__close {
+  position: absolute;
+  right: 1em;
+  top: 0.6em;
+  color: rgba(206, 14, 14, 0.541);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: transparent;
+}
+.main__popup__img {
+  width: 100%;
+  height: 50%;
+  border-radius: 2em 2em 0 0;
+}
+.main__popup__newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+}
+.main__popup__newsletter__title {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(43, 77, 172, 0.64);
+  font-weight: 600;
+  font-size: 0.8em;
+  padding: 1em;
+}
+.main__popup__newsletter__input {
+  border: none;
+  border-bottom: 1px solid #9a9595;
+}
+.main__popup__newsletter__input::-moz-placeholder {
+  color: #9a9595;
+  letter-spacing: 0.2em;
+}
+.main__popup__newsletter__input::placeholder {
+  color: #9a9595;
+  letter-spacing: 0.2em;
+}
+.main__popup__newsletter__button {
+  background-color: #08a6e4;
+  color: white;
+  border: none;
+  padding: 0.6em 3em;
+  border-radius: 1.5em;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__popup {
+    top: 25em;
+  }
+  .main__popup__newsletter__title {
+    font-size: 1.5em;
   }
 }
 * {

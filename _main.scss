@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 .main {
   text-align: center;
 
@@ -136,6 +140,7 @@
           position: relative;
           top: 1.2em;
           right: 1.2em;
+          width: 10em;
         }
 
         &__ellipse3 {
@@ -199,7 +204,7 @@
       }
 
       &__divImgTrumpet {
-        background-color: #55dfb4;
+        background-color: #55df9f;
         overflow: hidden;
         max-height: 12.18rem;
         border: 1px solid #e8e9ed;
@@ -218,6 +223,18 @@
     font-size: 2.25rem;
     line-height: 42.26px;
     margin: 3rem auto 0;
+  }
+
+  &__selector {
+    padding: 1em;
+
+    &__boton {
+      margin: 1em;
+    }
+
+    &__boton {
+      margin: 1em;
+    }
   }
 
   &__container {
@@ -283,8 +300,9 @@
             line-height: 23px;
 
             &__checkboxList {
-              p {
+              li {
                 margin: 1.56em 0;
+                list-style: none;
               }
             }
           }
@@ -321,6 +339,78 @@
       }
     }
   }
+
+  &__slider {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.801);
+    width: 96%;
+    height: 20em;
+    margin: 2em auto 0 auto;
+    padding: 0.5em 0.5em 1.6em 0.5em;
+    border-radius: 1em;
+    max-width: 30rem;
+
+
+
+    &__img {
+      width: 100%;
+      height: 99%;
+      border-radius: 1em;
+      aspect-ratio: 16/9;
+    }
+
+    &__buttonLeft {
+      position: absolute;
+      bottom: 50%;
+      width: 2em;
+      height: 2em;
+      left: 4%;
+      border: 1px solid rgba(240, 40, 40, 0.4);
+      border-radius: 15em;
+      background-color: rgba(240, 40, 40, 0.3);
+      color: rgb(255, 255, 255);
+      font-weight: 700;
+      box-shadow: 0px 0px 6px rgba(240, 40, 40, 1);
+      cursor: pointer;
+    }
+
+    &__buttonRight {
+      position: absolute;
+      bottom: 50%;
+      width: 2em;
+      height: 2em;
+      right: 4%;
+      border: 1px solid rgba(240, 40, 40, 0.4);
+      border-radius: 15em;
+      background-color: rgba(240, 40, 40, 0.3);
+      color: rgb(255, 255, 255);
+      font-weight: 700;
+      box-shadow: 0px 0px 6px rgba(240, 40, 40, 1);
+      cursor: pointer;
+
+    }
+
+    &__paginations {
+      position: relative;
+      width: 100%;
+
+      &__span {
+        background: #888;
+        width: 1em;
+        height: 1em;
+        border-radius: 15em;
+        display: inline-block;
+        margin: 0 0.3em;
+      }
+
+      .paginations--active {
+        background: #f7f7f7;
+        box-shadow: 0px 0px 10px rgba(240, 40, 40, 1);
+
+      }
+    }
+  }
+
 
   &__questions {
     margin: 2em auto 1em;
@@ -391,14 +481,20 @@
           line-height: 0.87rem;
           letter-spacing: 0.28rem;
           color: #08a6e4;
-          margin: 2rem 0 1.8rem;
+          margin: 3rem 0 0;
         }
 
         &__inputForm {
           border: none;
           border-bottom: 1px solid #9a9595;
           width: 100%;
+          height: 3em;
         }
+
+        .error {
+          border-bottom: 2px solid red;
+        }
+
       }
 
       &__check {
@@ -409,8 +505,17 @@
           appearance: none;
           width: 1.5rem;
           height: 1.5rem;
-          border: 1px solid #95989a;
+          border: 1px solid #9a9595;
           border-radius: 4px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        .error {
+          border: 2px solid red;
+        }
+
+        .checkboxCheckImg {
           background-image: url(./svg/Vector.svg);
           background-repeat: no-repeat;
           background-position: center;
@@ -444,6 +549,31 @@
       }
     }
   }
+
+  &__returnToTop {
+    visibility: hidden;
+    position: fixed;
+    bottom: 3.5em;
+    right: 0.8em;
+    cursor: pointer;
+
+    &__anchor {
+      img {
+        background-color: transparent;
+        border: none;
+        box-shadow: 2px 4px 9px #631b1b;
+        border-radius: 50%;
+        background-color: #c53939;
+        width: 2.5em;
+        height: 2.5em;
+      }
+
+      img:hover {
+        scale: 1.2;
+      }
+    }
+  }
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -553,6 +683,16 @@
       margin: 3em 0 1.3em;
     }
 
+    &__selector {
+
+      &__boton:hover {
+        scale: 1.6;
+        border-radius: 10em;
+        box-shadow: 0rem 0rem 1.8rem #2d2e2dc7;
+      }
+    }
+
+
     &__container {
       max-width: 79.1em;
       margin: auto;
@@ -608,6 +748,46 @@
       }
     }
 
+    &__slider {
+      max-width: 78em;
+      margin: 2em auto;
+      height: 40em;
+      padding-bottom: 2.5em;
+
+
+      &__buttonLeft {
+        width: 3em;
+        height: 3em;
+      }
+
+      &__buttonRight {
+        width: 3em;
+        height: 3em;
+
+      }
+
+      &__buttonLeft:hover {
+        scale: (1.4);
+      }
+
+      &__buttonRight:hover {
+        scale: (1.4);
+      }
+
+
+      &__paginations {
+        bottom: -0.5em;
+
+        &__span {
+          width: 1.5em;
+          height: 1.5em;
+          margin: 0 0.7em;
+        }
+
+      }
+    }
+
+
     &__questions {
       display: flex;
       justify-content: space-between;
@@ -618,7 +798,7 @@
       &__container {
         &__questionsTitle {
           font-size: 3em;
-          margin-bottom: 2em;
+          margin-bottom: 0.5em;
         }
 
         &__contact {
@@ -636,11 +816,15 @@
         width: 50%;
 
         &__form {
-          margin-bottom: 2em;
 
           &__formP {
             margin-top: 0.5em;
           }
+
+          &__inputForm {
+            margin-bottom: 3em;
+          }
+
         }
 
         &__check {
@@ -653,6 +837,18 @@
           &__sendForm {
             margin-bottom: 0em;
           }
+        }
+      }
+    }
+
+    &__returnToTop {
+      bottom: 6.5em;
+      right: 0.8em;
+
+      &__anchor {
+        img {
+          width: 3.5em;
+          height: 3.5em;
         }
       }
     }
