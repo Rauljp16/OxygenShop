@@ -428,7 +428,9 @@
   border-radius: 15em;
   background-color: rgba(240, 40, 40, 0.3);
   color: rgb(255, 255, 255);
-  font-weight: 700;
+  font-weight: 800;
+  font-size: small;
+  letter-spacing: 0.1em;
   box-shadow: 0px 0px 6px rgb(240, 40, 40);
   cursor: pointer;
 }
@@ -442,7 +444,9 @@
   border-radius: 15em;
   background-color: rgba(240, 40, 40, 0.3);
   color: rgb(255, 255, 255);
-  font-weight: 700;
+  font-weight: 800;
+  font-size: small;
+  letter-spacing: 0.1em;
   box-shadow: 0px 0px 6px rgb(240, 40, 40);
   cursor: pointer;
 }
@@ -739,10 +743,14 @@
   .main__slider__buttonLeft {
     width: 3em;
     height: 3em;
+    font-size: medium;
+    letter-spacing: 0.2em;
   }
   .main__slider__buttonRight {
     width: 3em;
     height: 3em;
+    font-size: medium;
+    letter-spacing: 0.2em;
   }
   .main__slider__buttonLeft:hover {
     scale: 1.4;
@@ -927,8 +935,8 @@
   .main__popup__close {
     right: 1.3em;
     top: 0.8em;
-    width: 1.7em;
-    height: 1.7em;
+    width: 2em;
+    height: 2em;
   }
   .main__popup__newsletter__title {
     font-size: 1.5em;
