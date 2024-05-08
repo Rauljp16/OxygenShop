@@ -868,8 +868,8 @@
   cursor: pointer;
   font-weight: 600;
   background-color: rgba(69, 160, 225, 0.23);
-  width: 1.5em;
-  height: 1.5em;
+  width: 2em;
+  height: 2em;
   border-radius: 15em;
 }
 .main__popup__img {
