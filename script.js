@@ -60,6 +60,7 @@ const delay = () => {
 const inputName = document.querySelector("#inputName");
 const inputMail = document.querySelector("#inputMail");
 const sendForm = document.querySelector("#sendForm");
+const popupError = document.querySelector("#popupError");
 const regexMail =
   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const checkbox = document.querySelector("#checkbox");
@@ -128,12 +129,14 @@ sendForm.addEventListener("submit", function (event) {
     resetForm();
   } else {
     alert("Formulario no valido");
+    popupError.classList.add("formError");
   }
 });
 
 //popup / modal
 
 const popup = document.querySelector("#popup");
+const newsletterTitle = document.querySelector("#newsletterTitle");
 const inputNewsletter = document.querySelector("#inputNewsletter");
 const formNewsletter = document.querySelector("#formNewsletter");
 let formNewsletterValid = false;
@@ -177,8 +180,11 @@ document.addEventListener("keydown", function (event) {
 const validationsNewsletter = () => {
   if (regexMail.test(inputNewsletter.value)) {
     formNewsletterValid = true;
+    popup.classList.remove("errorInput");
   } else {
-    alert("Email no valido");
+    newsletterTitle.textContent = "email no válido";
+    inputNewsletter.classList.add("error");
+    newsletterTitle.style.color = "red";
   }
 };
 

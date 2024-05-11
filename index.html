@@ -344,15 +344,19 @@
         <img src="./svg/return.svg"></img>
       </a>
     </section>
-    <section id="popup" class="main__popup">
+    <section id="popup" class="main__popup ">
       <button onclick="closePopup()" class="main__popup__close">X</button>
       <img src="./img/newsletter.webp" class="main__popup__img" alt="imagen newsletter" />
       <form id="formNewsletter" class="main__popup__newsletter">
-        <p class="main__popup__newsletter__title">Subscribe to our newsletter</p>
-        <input id="inputNewsletter" type="email" placeholder="rauljp16@gmail.com" class="main__popup__newsletter__input"
+        <p id="newsletterTitle" class="main__popup__newsletter__title">Subscribe to our newsletter</p>
+        <input id="inputNewsletter" type="email" placeholder="email" class="main__popup__newsletter__input"
           autocomplete="off" />
         <button type="submit" class="main__popup__newsletter__button">SUSCRIBE</button>
       </form>
+    </section>
+    <section id="popupError" class="main__popup ">
+        <p class="main__popup__newsletter__title">Rellena el formulario correctamente</p>
+        <button type="submit" class="main__popup__newsletter__button">ACEPTAR</button>
     </section>
   </main>
   <footer class="footer">

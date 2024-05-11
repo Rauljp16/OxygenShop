@@ -76,6 +76,17 @@
             }
         }
     }
+
+    .error {
+        border-bottom: 1px solid red;
+    }
+}
+
+.formError {
+    display: flex;
+    padding: 4em 3.5em;
+    flex-direction: column;
+    gap: 2.5em;
 }
 
 @media only screen and (min-width: 1000px) {
