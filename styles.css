@@ -765,6 +765,7 @@
     width: 1.5em;
     height: 1.5em;
     margin: 0 0.7em;
+    cursor: pointer;
   }
   .main__questions {
     display: flex;
@@ -813,7 +814,7 @@
   }
 }
 .footer {
-  box-shadow: 0em -0.3em 2.5em rgba(0, 0, 0, 0.2);
+  box-shadow: 0em 0.3em 2.5em rgba(0, 0, 0, 0.2);
   padding: 1.5rem 1rem;
 }
 .footer__rights {
@@ -846,6 +847,9 @@
 }
 .footer__rrss__svgFacebook {
   margin-right: 1em;
+}
+.footer__rrss a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -936,8 +940,8 @@
   flex-direction: column;
   align-items: center;
 }
-.formError__p {
-  padding: 2em 1em 1em 1em;
+.formError p {
+  color: red;
 }
 .formError img {
   height: 10em;
