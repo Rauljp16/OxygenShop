@@ -128,7 +128,6 @@ sendForm.addEventListener("submit", function (event) {
       .then((json) => console.log(json));
     resetForm();
   } else {
-    alert("Formulario no valido");
     popupError.classList.add("formError");
   }
 });
@@ -208,6 +207,10 @@ formNewsletter.addEventListener("submit", function (event) {
     closePopup();
   }
 });
+
+const popupErrorClose = () => {
+  popupError.style.display = "none";
+};
 
 //selector de moneda
 
