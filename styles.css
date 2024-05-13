@@ -820,7 +820,7 @@
 .footer__rights {
   display: inline-block;
   vertical-align: sub;
-  width: 70%;
+  width: 65%;
 }
 .footer__rights__logo {
   font-family: "Raleway", sans-serif;
@@ -833,13 +833,13 @@
 .footer__rights__reserved {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 0.68rem;
+  font-size: 0.69rem;
   line-height: 0.9rem;
   color: #a5a5a5;
 }
 .footer__rrss {
   display: inline-block;
-  width: 28%;
+  width: 33%;
   text-align: right;
 }
 .footer__rrss__svgTwitter {
