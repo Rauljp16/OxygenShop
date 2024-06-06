@@ -75,6 +75,7 @@
     &__menuDesktop {
       display: none;
       list-style: none;
+      cursor: pointer;
 
 
       &__article {
@@ -86,7 +87,6 @@
         }
 
       }
-
 
     }
 
@@ -133,7 +133,7 @@
           padding: 0;
 
 
-          :focus {
+          :hover {
             padding-top: 1.5em;
             height: 100%;
             font-weight: 700;
@@ -141,6 +141,7 @@
             border-bottom: 4px solid #08a6e4;
           }
         }
+
 
       }
 

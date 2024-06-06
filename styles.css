@@ -62,6 +62,7 @@
 .nav__menu__menuDesktop {
   display: none;
   list-style: none;
+  cursor: pointer;
 }
 .nav__menu__menuDesktop__article {
   padding: 1em;
@@ -106,7 +107,7 @@
     letter-spacing: 0.2em;
     padding: 0;
   }
-  .nav__menu__menuDesktop__article :focus {
+  .nav__menu__menuDesktop__article :hover {
     padding-top: 1.5em;
     height: 100%;
     font-weight: 700;
